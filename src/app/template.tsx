@@ -1,0 +1,6 @@
+import { PageFade } from '@/components/shared/motion/MotionPrimitives';
+import { ReactNode } from 'react';
+
+export default function Template({ children }: { children: ReactNode }) {
+  return <PageFade>{children}</PageFade>;
+}

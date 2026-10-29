@@ -1,0 +1,693 @@
+[
+  {
+    "letter": "A",
+    "subtitle": "Artificial Intelligence to Automation",
+    "id": "a",
+    "items": [
+      {
+        "id": "a-1",
+        "title": "API (Application Programming Interface)",
+        "description": "A set of rules that allows software applications to communicate and exchange information. APIs let products connect without building every capability from scratch.",
+        "example": "A website uses a payment API to initiate an online transaction."
+      },
+      {
+        "id": "a-2",
+        "title": "AI (Artificial Intelligence)",
+        "description": "Technology that enables computers to perform tasks such as language understanding, prediction, classification, and content generation.",
+        "example": "An AI assistant summarises a long document into key points."
+      },
+      {
+        "id": "a-3",
+        "title": "Algorithm",
+        "description": "A defined sequence of steps or rules used to solve a problem or process information.",
+        "example": "A scheduling algorithm assigns tasks based on deadlines and availability."
+      },
+      {
+        "id": "a-4",
+        "title": "Automation",
+        "description": "The use of software or systems to perform repetitive tasks with reduced manual effort.",
+        "example": "Automatically creating a CRM lead when a contact form is submitted."
+      }
+    ]
+  },
+  {
+    "letter": "B",
+    "subtitle": "Backend to Business Intelligence",
+    "id": "b",
+    "items": [
+      {
+        "id": "b-1",
+        "title": "Backend",
+        "description": "The server-side part of an application that handles business logic, data processing, authentication, and communication with databases or other services."
+      },
+      {
+        "id": "b-2",
+        "title": "Backup",
+        "description": "A separate copy of data that can help restore information after accidental deletion, corruption, or system failure."
+      },
+      {
+        "id": "b-3",
+        "title": "Business Intelligence (BI)",
+        "description": "Methods and tools used to analyse business data and present useful information for decision-making."
+      },
+      {
+        "id": "b-4",
+        "title": "Bug",
+        "description": "An error or unexpected behaviour in software that causes it to operate incorrectly or differently from its intended design."
+      }
+    ]
+  },
+  {
+    "letter": "C",
+    "subtitle": "Cloud to Conversion Rate",
+    "id": "c",
+    "items": [
+      {
+        "id": "c-1",
+        "title": "Cloud Computing",
+        "description": "The delivery of computing resources such as servers, databases, storage, and software over a network, usually the internet."
+      },
+      {
+        "id": "c-2",
+        "title": "CRM (Customer Relationship Management)",
+        "description": "A system for organising customer information, interactions, sales activities, and follow-up processes."
+      },
+      {
+        "id": "c-3",
+        "title": "Cybersecurity",
+        "description": "The practices and technologies used to protect systems, networks, applications, and data against digital threats."
+      },
+      {
+        "id": "c-4",
+        "title": "Conversion Rate",
+        "description": "The percentage of visitors or users who complete a desired action, such as submitting a form or making a purchase."
+      }
+    ]
+  },
+  {
+    "letter": "D",
+    "subtitle": "Database to Digital Transformation",
+    "id": "d",
+    "items": [
+      {
+        "id": "d-1",
+        "title": "Database",
+        "description": "An organised collection of data that software can store, retrieve, update, and manage."
+      },
+      {
+        "id": "d-2",
+        "title": "Dashboard",
+        "description": "A visual interface that presents important metrics, trends, and operational information in one place."
+      },
+      {
+        "id": "d-3",
+        "title": "Data Analytics",
+        "description": "The process of examining data to identify patterns, answer questions, and support decisions."
+      },
+      {
+        "id": "d-4",
+        "title": "Digital Transformation",
+        "description": "The use of digital technology to improve business processes, customer experiences, and how an organisation operates."
+      }
+    ]
+  },
+  {
+    "letter": "E",
+    "subtitle": "Encryption to Experience Design",
+    "id": "e",
+    "items": [
+      {
+        "id": "e-1",
+        "title": "Encryption",
+        "description": "The process of transforming readable information into a protected form that requires the appropriate key to decrypt."
+      },
+      {
+        "id": "e-2",
+        "title": "Endpoint",
+        "description": "A device connected to a network or, in an API, a specific address through which a service exposes an operation."
+      },
+      {
+        "id": "e-3",
+        "title": "ERP (Enterprise Resource Planning)",
+        "description": "Software that integrates business operations such as finance, inventory, procurement, and planning."
+      },
+      {
+        "id": "e-4",
+        "title": "Experience Design",
+        "description": "The practice of designing interactions and journeys so that products and services are useful, understandable, and satisfying."
+      }
+    ]
+  },
+  {
+    "letter": "F",
+    "subtitle": "Framework to Frontend",
+    "id": "f",
+    "items": [
+      {
+        "id": "f-1",
+        "title": "Framework",
+        "description": "A reusable structure and set of conventions that help developers build software more consistently."
+      },
+      {
+        "id": "f-2",
+        "title": "Frontend",
+        "description": "The part of a website or application that users see and interact with."
+      },
+      {
+        "id": "f-3",
+        "title": "Function as a Service (FaaS)",
+        "description": "A cloud computing model that runs individual functions in response to events without requiring the developer to manage a traditional server for each function."
+      },
+      {
+        "id": "f-4",
+        "title": "Funnel",
+        "description": "A model of the steps users take toward a goal, such as discovering a product, evaluating it, and completing a purchase."
+      }
+    ]
+  },
+  {
+    "letter": "G",
+    "subtitle": "Git to Generative AI",
+    "id": "g",
+    "items": [
+      {
+        "id": "g-1",
+        "title": "Generative AI",
+        "description": "AI that creates new content, such as text, images, audio, or code, based on patterns learned during training and the input it receives."
+      },
+      {
+        "id": "g-2",
+        "title": "Git",
+        "description": "A version-control system that tracks changes to files and supports collaborative software development."
+      },
+      {
+        "id": "g-3",
+        "title": "GitHub",
+        "description": "A platform for hosting Git repositories and collaborating on code, issues, and software projects."
+      },
+      {
+        "id": "g-4",
+        "title": "Growth Marketing",
+        "description": "An approach to improving acquisition, activation, retention, and other business outcomes through experiments and measurement."
+      }
+    ]
+  },
+  {
+    "letter": "H",
+    "subtitle": "Hosting to Human-in-the-Loop",
+    "id": "h",
+    "items": [
+      {
+        "id": "h-1",
+        "title": "Hosting",
+        "description": "A service that makes a website, application, or other digital resource available to users over a network."
+      },
+      {
+        "id": "h-2",
+        "title": "HTML",
+        "description": "The markup language used to structure content on web pages."
+      },
+      {
+        "id": "h-3",
+        "title": "Human-in-the-Loop",
+        "description": "A design approach in which people review, approve, correct, or guide automated or AI-driven decisions."
+      },
+      {
+        "id": "h-4",
+        "title": "HTTP",
+        "description": "A protocol used for communication between web clients and servers. HTTPS adds transport encryption through TLS."
+      }
+    ]
+  },
+  {
+    "letter": "I",
+    "subtitle": "Integration to Iteration",
+    "id": "i",
+    "items": [
+      {
+        "id": "i-1",
+        "title": "Integration",
+        "description": "The connection of software systems so they can exchange data or coordinate tasks."
+      },
+      {
+        "id": "i-2",
+        "title": "Internet of Things (IoT)",
+        "description": "Physical devices with sensors or software that communicate and exchange data over networks."
+      },
+      {
+        "id": "i-3",
+        "title": "Iteration",
+        "description": "A cycle of building, testing, learning, and refining a product or process."
+      },
+      {
+        "id": "i-4",
+        "title": "Information Architecture",
+        "description": "The organisation and labelling of content so people can find information and navigate a product effectively."
+      }
+    ]
+  },
+  {
+    "letter": "J",
+    "subtitle": "JavaScript to Journey Mapping",
+    "id": "j",
+    "items": [
+      {
+        "id": "j-1",
+        "title": "JavaScript",
+        "description": "A programming language widely used to create interactive web experiences and build server-side applications."
+      },
+      {
+        "id": "j-2",
+        "title": "JSON (JavaScript Object Notation)",
+        "description": "A text-based data format commonly used to exchange structured information between applications."
+      },
+      {
+        "id": "j-3",
+        "title": "Journey Mapping",
+        "description": "A visual representation of the steps, needs, and friction points a person experiences when interacting with a product or service."
+      }
+    ]
+  },
+  {
+    "letter": "K",
+    "subtitle": "Key Performance Indicators to Knowledge Base",
+    "id": "k",
+    "items": [
+      {
+        "id": "k-1",
+        "title": "Key Performance Indicator (KPI)",
+        "description": "A measurable indicator used to assess progress toward an important goal."
+      },
+      {
+        "id": "k-2",
+        "title": "Keyword Research",
+        "description": "The process of discovering the search terms people use and evaluating which terms are relevant to a website's audience."
+      },
+      {
+        "id": "k-3",
+        "title": "Knowledge Base",
+        "description": "An organised collection of information, instructions, and answers that helps people or software find relevant knowledge."
+      },
+      {
+        "id": "k-4",
+        "title": "Knowledge Graph",
+        "description": "A structured representation of entities and the relationships between them."
+      }
+    ]
+  },
+  {
+    "letter": "L",
+    "subtitle": "Latency to Low-Code",
+    "id": "l",
+    "items": [
+      {
+        "id": "l-1",
+        "title": "Latency",
+        "description": "The time taken for a request, action, or data transfer to produce a response."
+      },
+      {
+        "id": "l-2",
+        "title": "Large Language Model (LLM)",
+        "description": "An AI model trained to process and generate language, often used for summarisation, question answering, and content creation."
+      },
+      {
+        "id": "l-3",
+        "title": "Low-Code Development",
+        "description": "Building applications using visual tools and prebuilt components, with some coding when needed."
+      },
+      {
+        "id": "l-4",
+        "title": "Lifecycle Management",
+        "description": "The process of managing a product, system, or data through stages such as creation, operation, maintenance, and retirement."
+      }
+    ]
+  },
+  {
+    "letter": "M",
+    "subtitle": "Machine Learning to MVP",
+    "id": "m",
+    "items": [
+      {
+        "id": "m-1",
+        "title": "Machine Learning (ML)",
+        "description": "A field of AI in which models learn patterns from data to make predictions, classifications, or other outputs."
+      },
+      {
+        "id": "m-2",
+        "title": "Metadata",
+        "description": "Information that describes other information, such as an article's author, publication date, or category."
+      },
+      {
+        "id": "m-3",
+        "title": "Microservices",
+        "description": "An architectural approach that organises an application as smaller services communicating through defined interfaces."
+      },
+      {
+        "id": "m-4",
+        "title": "Minimum Viable Product (MVP)",
+        "description": "An initial version of a product designed to test important assumptions with the smallest useful set of features."
+      }
+    ]
+  },
+  {
+    "letter": "N",
+    "subtitle": "Natural Language Processing to No-Code",
+    "id": "n",
+    "items": [
+      {
+        "id": "n-1",
+        "title": "Natural Language Processing (NLP)",
+        "description": "Techniques that help computers analyse, understand, and generate human language."
+      },
+      {
+        "id": "n-2",
+        "title": "Network",
+        "description": "A collection of connected devices or systems that can exchange information."
+      },
+      {
+        "id": "n-3",
+        "title": "No-Code Development",
+        "description": "Creating applications or workflows primarily through visual interfaces rather than writing conventional code."
+      },
+      {
+        "id": "n-4",
+        "title": "Normalization",
+        "description": "In database design, a method of organising data to reduce unnecessary duplication and improve consistency."
+      }
+    ]
+  },
+  {
+    "letter": "O",
+    "subtitle": "Observability to Open Source",
+    "id": "o",
+    "items": [
+      {
+        "id": "o-1",
+        "title": "Observability",
+        "description": "The ability to understand a system's internal behaviour using signals such as logs, metrics, and traces."
+      },
+      {
+        "id": "o-2",
+        "title": "OCR (Optical Character Recognition)",
+        "description": "Technology that converts text in images or scanned documents into machine-readable text."
+      },
+      {
+        "id": "o-3",
+        "title": "Open Source",
+        "description": "Software distributed under a licence that grants specified rights to inspect, use, modify, or redistribute its source code."
+      },
+      {
+        "id": "o-4",
+        "title": "Operational Efficiency",
+        "description": "Achieving intended outputs while making effective use of time, resources, and processes."
+      }
+    ]
+  },
+  {
+    "letter": "P",
+    "subtitle": "Prompt Engineering to Productivity",
+    "id": "p",
+    "items": [
+      {
+        "id": "p-1",
+        "title": "Prompt Engineering",
+        "description": "The practice of designing and refining instructions and context to improve the usefulness of an AI model's responses."
+      },
+      {
+        "id": "p-2",
+        "title": "Productivity",
+        "description": "The ability to produce useful results efficiently, with attention to quality and resources."
+      },
+      {
+        "id": "p-3",
+        "title": "Progressive Web App (PWA)",
+        "description": "A web application designed to provide app-like experiences through supported browser and operating-system capabilities."
+      },
+      {
+        "id": "p-4",
+        "title": "Pipeline",
+        "description": "A sequence of connected stages that processes work or data, such as a deployment pipeline or sales pipeline."
+      }
+    ]
+  },
+  {
+    "letter": "Q",
+    "subtitle": "Quality Assurance to Query",
+    "id": "q",
+    "items": [
+      {
+        "id": "q-1",
+        "title": "Quality Assurance (QA)",
+        "description": "Processes and practices designed to help ensure that a product meets defined quality expectations."
+      },
+      {
+        "id": "q-2",
+        "title": "Query",
+        "description": "A request for information or an operation against a database, search system, or API."
+      },
+      {
+        "id": "q-3",
+        "title": "Queue",
+        "description": "A structure that holds tasks or messages until they can be processed."
+      },
+      {
+        "id": "q-4",
+        "title": "Quantum Computing",
+        "description": "A computing approach based on quantum-mechanical principles that may offer advantages for certain specialised problems."
+      }
+    ]
+  },
+  {
+    "letter": "R",
+    "subtitle": "RAG to Responsive Design",
+    "id": "r",
+    "items": [
+      {
+        "id": "r-1",
+        "title": "RAG (Retrieval-Augmented Generation)",
+        "description": "An AI architecture that retrieves relevant information from a source and supplies it to a generative model to help produce context-aware responses."
+      },
+      {
+        "id": "r-2",
+        "title": "Rate Limiting",
+        "description": "A mechanism that restricts how frequently a user, application, or service can make requests."
+      },
+      {
+        "id": "r-3",
+        "title": "Responsive Design",
+        "description": "An approach to web design that adapts layouts and content to different screen sizes and device capabilities."
+      },
+      {
+        "id": "r-4",
+        "title": "Return on Investment (ROI)",
+        "description": "A measure comparing the benefit or return of an investment with its cost."
+      }
+    ]
+  },
+  {
+    "letter": "S",
+    "subtitle": "SaaS to System Architecture",
+    "id": "s",
+    "items": [
+      {
+        "id": "s-1",
+        "title": "SaaS (Software as a Service)",
+        "description": "Software delivered as a service, commonly accessed through a browser or app and maintained by a provider."
+      },
+      {
+        "id": "s-2",
+        "title": "Scalability",
+        "description": "A system's ability to handle growth in users, workload, or data while meeting its performance requirements."
+      },
+      {
+        "id": "s-3",
+        "title": "SEO (Search Engine Optimisation)",
+        "description": "Practices that help search engines discover, understand, and appropriately present web content."
+      },
+      {
+        "id": "s-4",
+        "title": "System Architecture",
+        "description": "The structure of a software system, including its components, responsibilities, interfaces, and interactions."
+      }
+    ]
+  },
+  {
+    "letter": "T",
+    "subtitle": "Technical Debt to Two-Factor Authentication",
+    "id": "t",
+    "items": [
+      {
+        "id": "t-1",
+        "title": "Technical Debt",
+        "description": "Future maintenance or rework that may result from shortcuts, deferred improvements, or earlier design decisions."
+      },
+      {
+        "id": "t-2",
+        "title": "Telemetry",
+        "description": "Data collected about a system's operation, such as performance, errors, and usage events."
+      },
+      {
+        "id": "t-3",
+        "title": "Two-Factor Authentication (2FA)",
+        "description": "An authentication method requiring two distinct types of evidence to verify identity."
+      },
+      {
+        "id": "t-4",
+        "title": "Token",
+        "description": "A value used to represent or verify authority, identity, or a temporary grant of access in a system."
+      }
+    ]
+  },
+  {
+    "letter": "U",
+    "subtitle": "UI to User Experience",
+    "id": "u",
+    "items": [
+      {
+        "id": "u-1",
+        "title": "UI (User Interface)",
+        "description": "The visual and interactive elements through which a person uses a website, application, or device."
+      },
+      {
+        "id": "u-2",
+        "title": "Uptime",
+        "description": "The amount or proportion of time a service is available and operating according to its availability criteria."
+      },
+      {
+        "id": "u-3",
+        "title": "Usability",
+        "description": "How effectively, efficiently, and satisfactorily people can use a product to achieve their goals."
+      },
+      {
+        "id": "u-4",
+        "title": "User Experience (UX)",
+        "description": "The overall experience a person has when interacting with a product, service, or organisation."
+      }
+    ]
+  },
+  {
+    "letter": "V",
+    "subtitle": "Validation to Version Control",
+    "id": "v",
+    "items": [
+      {
+        "id": "v-1",
+        "title": "Validation",
+        "description": "The process of checking whether a product, input, or result meets its intended requirements or expectations."
+      },
+      {
+        "id": "v-2",
+        "title": "Vector Database",
+        "description": "A database designed to store and retrieve vector representations, often used for semantic search and retrieval in AI applications."
+      },
+      {
+        "id": "v-3",
+        "title": "Version Control",
+        "description": "A system for tracking changes to files and coordinating work across different versions."
+      },
+      {
+        "id": "v-4",
+        "title": "Virtual Private Cloud (VPC)",
+        "description": "A logically isolated cloud network environment in which resources and network access can be configured."
+      }
+    ]
+  },
+  {
+    "letter": "W",
+    "subtitle": "Webhooks to Workflow",
+    "id": "w",
+    "items": [
+      {
+        "id": "w-1",
+        "title": "Webhook",
+        "description": "An automated notification sent from one application to another when a specified event occurs."
+      },
+      {
+        "id": "w-2",
+        "title": "Web Accessibility",
+        "description": "Designing and developing websites so people with different abilities can perceive, understand, navigate, and use them."
+      },
+      {
+        "id": "w-3",
+        "title": "Workflow",
+        "description": "A sequence of tasks, decisions, or actions that moves work from a starting point toward a result."
+      },
+      {
+        "id": "w-4",
+        "title": "Wireframe",
+        "description": "A simplified visual representation of a page or interface used to plan structure and content before detailed design."
+      }
+    ]
+  },
+  {
+    "letter": "X",
+    "subtitle": "XML to XSS",
+    "id": "x",
+    "items": [
+      {
+        "id": "x-1",
+        "title": "XML (Extensible Markup Language)",
+        "description": "A structured text format used to represent and exchange data with custom-defined tags."
+      },
+      {
+        "id": "x-2",
+        "title": "Experience Mapping",
+        "description": "A method of documenting user needs, actions, pain points, and opportunities across an experience."
+      },
+      {
+        "id": "x-3",
+        "title": "XSS (Cross-Site Scripting)",
+        "description": "A web security vulnerability in which untrusted content is executed as script in another user's browser. Output encoding and appropriate sanitisation help reduce this risk."
+      }
+    ]
+  },
+  {
+    "letter": "Y",
+    "subtitle": "YAML to Yield",
+    "id": "y",
+    "items": [
+      {
+        "id": "y-1",
+        "title": "YAML",
+        "description": "A human-readable data serialisation format commonly used for configuration files and workflow definitions."
+      },
+      {
+        "id": "y-2",
+        "title": "Year-over-Year (YoY)",
+        "description": "A comparison of a metric with the corresponding period in the previous year."
+      },
+      {
+        "id": "y-3",
+        "title": "Yield",
+        "description": "The useful output produced by a process or investment, depending on the context in which the term is used."
+      }
+    ]
+  },
+  {
+    "letter": "Z",
+    "subtitle": "Zero Trust to Zero-Day",
+    "id": "z",
+    "items": [
+      {
+        "id": "z-1",
+        "title": "Zero Trust",
+        "description": "A security approach that does not automatically trust a user or device simply because it is inside a network. Access is evaluated according to identity, context, and policy."
+      },
+      {
+        "id": "z-2",
+        "title": "Zero-Day Vulnerability",
+        "description": "A software vulnerability for which effective remediation may not yet be available when it becomes known or exploited."
+      },
+      {
+        "id": "z-3",
+        "title": "Zero-Code Automation",
+        "description": "Automation configured primarily through visual tools or predefined actions rather than custom code. Exact capabilities depend on the platform."
+      },
+      {
+        "id": "z-4",
+        "title": "Zettabyte",
+        "description": "A unit of digital information equal to 10^21 bytes in the decimal system."
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+import hero1 from '@public/images/ns-img-77.png';
+import hero2 from '@public/images/ns-img-78.png';
+import hero3 from '@public/images/ns-img-79.png';
+import hero1Dark from '@public/images/ns-img-dark-52.png';
+import hero3Dark from '@public/images/ns-img-dark-53.png';
+import Image from 'next/image';
+import RevealAnimation from '../animation/RevealAnimation';
+
+const AnalyticsHero = () => {
+  return (
+    <section className="relative pt-32 pb-[100px] sm:pt-36 md:pt-42 xl:pt-[180px]">
+      <div className="main-container">
+        <div className="mb-[72px] flex flex-col items-center justify-center">
+          <div className="mx-auto w-[95%] max-w-[850px] space-y-4 text-center">
+            <RevealAnimation delay={0.2}>
+              <span className="badge badge-cyan">Analytics</span>
+            </RevealAnimation>
+            <RevealAnimation delay={0.3}>
+              <h1 className="text-heading-3 sm:text-heading-2 md:text-heading-1 font-normal">
+                Turn Data Into Direction.
+              </h1>
+            </RevealAnimation>
+            <RevealAnimation delay={0.4}>
+              <p className="text-secondary/70 dark:text-accent/70 text-base sm:text-lg leading-relaxed max-w-[760px] mx-auto">
+                Transform scattered information into meaningful insights. Arlo Technologies helps businesses explore data, understand performance, identify patterns, and make more informed decisions through thoughtful analytics experiences and intelligent digital solutions.
+              </p>
+            </RevealAnimation>
+          </div>
+        </div>
+      </div>
+      <RevealAnimation delay={0.5}>
+        <div className="dark:bg-background-6 mx-auto w-[98%] max-w-[1540px] rounded-2xl bg-white py-[80px] xl:px-[100px] border border-stroke-3 dark:border-stroke-7 shadow-sm">
+          <div className="lp:max-w-[1416px] relative mx-auto max-w-[980px] lg:max-w-[1140px] xl:max-w-[1280px]">
+            <RevealAnimation delay={0.4} direction="left">
+              <figure className="absolute -top-10 left-10 z-20 max-w-[120px] overflow-hidden rounded-[20px] sm:max-w-[200px] lg:top-20 lg:left-20 lg:max-w-[282px] xl:top-1/2 xl:left-0 xl:-translate-y-1/2 shadow-md">
+                <Image src={hero1} alt="Analytics dashboard overview" className="block h-full w-full object-cover dark:hidden" />
+                <Image src={hero1Dark} alt="Analytics dashboard overview dark" className="hidden h-full w-full object-cover dark:block" />
+              </figure>
+            </RevealAnimation>
+            <figure className="relative z-10 mx-auto max-w-[860px] overflow-hidden rounded-[20px] px-10 lg:px-0 xl:mx-0 xl:translate-x-[36%]">
+              <Image src={hero2} alt="Analytics metrics visualization" className="h-full w-full rounded-[20px] object-cover lg:rounded-none" />
+            </figure>
+            <RevealAnimation delay={0.5} direction="right">
+              <figure className="shadow-3 absolute right-0 bottom-0 z-20 max-w-[150px] overflow-hidden rounded-[20px] sm:right-14 sm:bottom-14 sm:max-w-[200px] lg:right-20 lg:bottom-5 lg:max-w-[320px] xl:top-1/2 xl:-right-0 xl:bottom-auto xl:-translate-y-1/2">
+                <Image src={hero3} alt="Analytics reporting interface" className="block h-full w-full dark:hidden" />
+                <Image src={hero3Dark} alt="Analytics reporting interface dark" className="hidden h-full w-full dark:block" />
+              </figure>
+            </RevealAnimation>
+          </div>
+        </div>
+      </RevealAnimation>
+    </section>
+  );
+};
+
+AnalyticsHero.displayName = 'AnalyticsHero';
+export default AnalyticsHero;
