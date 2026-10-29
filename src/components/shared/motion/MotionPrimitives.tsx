@@ -98,7 +98,7 @@ export const ScrollProgress = () => {
 export const PageFade = ({ children }: { children: ReactNode }) => {
   const reduce = useReducedMotion();
   return (
-    <motion.div initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
+    <motion.div initial={reduce ? false : { opacity: 0.35 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, ease: 'easeOut' }}>
       {children}
     </motion.div>
   );

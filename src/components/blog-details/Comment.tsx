@@ -1,3 +1,4 @@
+import ApiForm from '@/components/shared/forms/ApiForm';
 import avatar from '@public/images/ns-avatar-6.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -36,7 +37,7 @@ const Comment = () => {
           <h6 className="text-tagline-1">Reply</h6>
         </div>
         <div className="dark:bg-background-8 max-w-[850px] rounded-[20px] bg-white px-4 py-6 md:w-full md:p-6 lg:p-[42px]">
-          <form action="#" method="post">
+          <ApiForm type="comment">
             {/* name field  */}
             <fieldset className="mb-8 flex w-full flex-col items-start justify-start gap-2">
               <label htmlFor="fullName" className="text-tagline-1 text-secondary dark:text-accent font-medium">
@@ -102,7 +103,7 @@ const Comment = () => {
               aria-label="Submit contact form">
               Submit
             </button>
-          </form>
+          </ApiForm>
         </div>
       </article>
     </RevealAnimation>

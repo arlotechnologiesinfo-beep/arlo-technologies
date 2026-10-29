@@ -10,6 +10,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import RevealAnimation from '../animation/RevealAnimation';
+import { submitForm } from '@/lib/forms/submit';
 
 const contactInfoCards = [
   {
@@ -79,9 +80,23 @@ const ContactInfo = () => {
 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+    if (submitting) {
+      return;
+    }
+    setSubmitting(true);
+    setSubmitError('');
+    const result = await submitForm('contact', { ...formData });
+    setSubmitting(false);
+    if (result.ok) {
+      setFormSubmitted(true);
+    } else {
+      setSubmitError(result.error);
+    }
   };
 
   return (
@@ -201,7 +216,13 @@ const ContactInfo = () => {
                     </div>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6" aria-busy={submitting}>
+                    {submitError && (
+                      <p role="alert" className="text-tagline-2 font-medium text-red-500">
+                        {submitError}
+                      </p>
+                    )}
+
                     {/* Row 1: Name & Work Email */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">

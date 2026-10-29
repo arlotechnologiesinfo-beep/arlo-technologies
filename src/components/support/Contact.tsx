@@ -5,14 +5,31 @@ import supportContact from '@public/images/ns-img-402.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
+import { submitForm } from '@/lib/forms/submit';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [error, setError] = useState('');
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Isolated submission handler ready for future API integration
-    setSubmitted(true);
+    if (sending) {
+      return;
+    }
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+    setSending(true);
+    setError('');
+    const result = await submitForm('support', data);
+    setSending(false);
+    if (result.ok) {
+      setSubmitted(true);
+      form.reset();
+    } else {
+      setError(result.error);
+    }
   };
 
   return (
@@ -47,15 +64,20 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="dark:bg-background-8 rounded-[20px] bg-white p-6 lg:p-[42px]">
                 {submitted && (
                   <div className="mb-6 rounded-xl border border-primary/30 bg-primary/10 p-4 text-tagline-2 text-secondary dark:text-accent">
-                    <p className="font-semibold">Support request preview recorded.</p>
+                    <p className="font-semibold">Support request received.</p>
                     <p className="mt-1 text-sm text-secondary/80 dark:text-accent/80">
-                      Our live API backend is being connected. For direct assistance today, please feel free to reach out via our{' '}
+                      Our team will get back to you shortly. For anything urgent, reach out via our{' '}
                       <Link href="/contact-us" className="text-primary-500 underline font-medium">
                         Contact Us
                       </Link>{' '}
                       page.
                     </p>
                   </div>
+                )}
+                {error && (
+                  <p role="alert" className="mb-6 text-tagline-2 font-medium text-red-500">
+                    {error}
+                  </p>
                 )}
                 <fieldset className="mb-8 space-y-2">
                   <label htmlFor="name" className="text-tagline-1 text-secondary dark:text-accent block font-medium">

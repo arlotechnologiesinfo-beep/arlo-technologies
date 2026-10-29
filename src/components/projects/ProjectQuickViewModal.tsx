@@ -1,6 +1,6 @@
 'use client';
 
-import LinkButton, { V2ConveyorArrow } from '@/components/ui/button/LinkButton';
+import { V2ConveyorArrow } from '@/components/ui/button/LinkButton';
 import { ICaseStudyItem } from '@/data/caseStudies';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export default function ProjectQuickViewModal({
   onClose,
 }: ProjectQuickViewModalProps) {
   useEffect(() => {
-    if (!isOpen) return;
+    if (!isOpen) {return;}
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -36,7 +36,7 @@ export default function ProjectQuickViewModal({
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen || !project) return null;
+  if (!isOpen || !project) {return null;}
 
   const isClientProject = project.type === 'client-project';
   const techStack = project.systemArchitecture?.techStack || [];

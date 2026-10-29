@@ -1,3 +1,4 @@
+import ApiForm from '@/components/shared/forms/ApiForm';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
         {/* contact form  */}
         <RevealAnimation delay={0.4}>
           <div className="p-6 lg:p-11 bg-background-3 dark:bg-background-6 rounded-[32px] max-w-[850px] mx-auto w-full">
-            <form action="#" method="post" className="grid grid-cols-12 sm:gap-x-8 gap-y-8">
+            <ApiForm type="contact" className="grid grid-cols-12 sm:gap-x-8 gap-y-8">
               {/* name field  */}
               <fieldset className="col-span-12 md:col-span-6 flex flex-col gap-y-2 items-start justify-start">
                 <label htmlFor="fullName" className="text-tagline-1 text-secondary dark:text-accent font-medium">
@@ -72,7 +73,7 @@ const Contact = () => {
                   Contact now
                 </button>
               </div>
-            </form>
+            </ApiForm>
           </div>
         </RevealAnimation>
       </div>

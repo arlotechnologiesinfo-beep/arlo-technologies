@@ -1,3 +1,4 @@
+import ApiForm from '@/components/shared/forms/ApiForm';
 import { CheckIcon } from '@/icons';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -23,7 +24,7 @@ const CTA = () => {
           </div>
           <div className="mt-[62px] space-y-8 max-sm:mx-auto max-sm:w-[80%]">
             <RevealAnimation delay={0.4}>
-              <form action="#" method="post" className="flex items-center justify-center gap-3 max-sm:flex-col">
+              <ApiForm type="newsletter" className="flex items-center justify-center gap-3 max-sm:flex-col">
                 <input
                   type="email"
                   name="email"
@@ -36,7 +37,7 @@ const CTA = () => {
                   className="btn btn-md btn-primary dark:btn-accent dark:hover:btn-primary border-primary-400 hover:btn-secondary h-12 max-sm:w-full">
                   <span>Get started</span>
                 </button>
-              </form>
+              </ApiForm>
             </RevealAnimation>
             <ul className="flex items-center justify-center gap-[42px]">
               <RevealAnimation delay={0.2}>

@@ -30,7 +30,7 @@ export default function HeroVideoCard({
   // Handle autoplay and ensure audio is strictly muted per browser autoplay policies
   useEffect(() => {
     const video = videoRef.current;
-    if (!video) return;
+    if (!video) {return;}
 
     video.defaultMuted = true;
     video.muted = true;

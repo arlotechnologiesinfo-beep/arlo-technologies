@@ -166,7 +166,9 @@ export default function ProjectsPage() {
                         src={client.thumbnail}
                         alt={client.name}
                         fill
-                        unoptimized
+                        unoptimized={client.thumbnail.startsWith('/api/')}
+                        quality={90}
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute top-2 left-2 flex items-center gap-1 rounded-full bg-black/60 backdrop-blur-xs px-2 py-0.5 text-[10px] text-white">

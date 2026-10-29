@@ -3,6 +3,7 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { cn } from '@/utils/cn';
 import { useState } from 'react';
+import { submitForm } from '@/lib/forms/submit';
 
 interface CtaInputFormProps {
   btnClass?: string;
@@ -14,10 +15,19 @@ const CtaInputForm = ({ btnClass, ctaBtnText = 'Get Started', inputFieldClass }:
   const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (!email.trim()) {
+      return;
+    }
+    setError('');
+    const result = await submitForm('newsletter', { email, source: 'cta' });
+    if (result.ok) {
       setSubmitted(true);
+    } else {
+      setError(result.error);
     }
   };
 
@@ -60,6 +70,11 @@ const CtaInputForm = ({ btnClass, ctaBtnText = 'Get Started', inputFieldClass }:
           aria-label="cta-button">
           <span>{ctaBtnText}</span>
         </button>
+        {error && (
+          <p role="alert" className="text-tagline-2 text-red-500">
+            {error}
+          </p>
+        )}
       </form>
     </RevealAnimation>
   );

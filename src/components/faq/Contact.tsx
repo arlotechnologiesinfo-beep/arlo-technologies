@@ -1,3 +1,4 @@
+import ApiForm from '@/components/shared/forms/ApiForm';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -26,7 +27,7 @@ const Contact = () => {
           {/* form */}
           <RevealAnimation delay={0.5}>
             <div className="contact-form dark:bg-background-6 mx-auto max-w-[850px] rounded-[20px] bg-white p-5 sm:p-[42px] md:w-full">
-              <form action="/" method="POST">
+              <ApiForm type="contact">
                 {/* full name */}
                 <div className="mb-8 space-y-2">
                   <label
@@ -98,7 +99,7 @@ const Contact = () => {
                   className="btn btn-md btn-secondary dark:btn-accent hover:btn-primary w-full first-letter:uppercase before:content-none">
                   Submit
                 </button>
-              </form>
+              </ApiForm>
             </div>
           </RevealAnimation>
         </div>

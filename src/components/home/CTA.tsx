@@ -7,6 +7,7 @@ import gradient13 from '@public/images/ns-img-505.png';
 import RevealAnimation from '../animation/RevealAnimation';
 import CTACheckList from '../shared/cta/CTACheckList';
 import { V2ConveyorArrow } from '../ui/button/LinkButton';
+import { submitForm } from '@/lib/forms/submit';
 
 const ctaCheckListData = [
   { id: '1', text: 'Freelance jobs' },
@@ -17,10 +18,19 @@ const CTA = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (!email.trim()) {
+      return;
+    }
+    setError('');
+    const result = await submitForm('newsletter', { email, source: 'home-cta' });
+    if (result.ok) {
       setSubmitted(true);
+    } else {
+      setError(result.error);
     }
   };
 
@@ -71,6 +81,11 @@ const CTA = () => {
                   <span>Get started</span>
                   <V2ConveyorArrow />
                 </button>
+                {error && (
+                  <p role="alert" className="text-tagline-2 text-red-500">
+                    {error}
+                  </p>
+                )}
               </form>
             )}
           </RevealAnimation>

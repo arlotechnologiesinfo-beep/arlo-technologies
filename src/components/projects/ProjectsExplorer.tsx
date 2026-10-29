@@ -135,8 +135,8 @@ export default function ProjectsExplorer({ initialProjects }: ProjectsExplorerPr
     // Sorting
     return list.sort((a, b) => {
       if (sortBy === 'client-first') {
-        if (a.type === 'client-project' && b.type !== 'client-project') return -1;
-        if (a.type !== 'client-project' && b.type === 'client-project') return 1;
+        if (a.type === 'client-project' && b.type !== 'client-project') {return -1;}
+        if (a.type !== 'client-project' && b.type === 'client-project') {return 1;}
       } else if (sortBy === 'title') {
         return a.title.localeCompare(b.title);
       } else if (sortBy === 'read-time') {
@@ -183,7 +183,7 @@ export default function ProjectsExplorer({ initialProjects }: ProjectsExplorerPr
   // GSAP animation on layout/category/page change
   useGSAP(
     () => {
-      if (!gridContainerRef.current) return;
+      if (!gridContainerRef.current) {return;}
       const cards = gridContainerRef.current.querySelectorAll('.project-grid-item');
       if (cards.length > 0) {
         gsap.fromTo(
@@ -205,7 +205,7 @@ export default function ProjectsExplorer({ initialProjects }: ProjectsExplorerPr
   );
 
   const getCategoryCount = (key: string) => {
-    if (key === 'all') return initialProjects.length;
+    if (key === 'all') {return initialProjects.length;}
     return initialProjects.filter((p) => p.categoryKey === key).length;
   };
 
@@ -502,7 +502,9 @@ export default function ProjectsExplorer({ initialProjects }: ProjectsExplorerPr
                           width={1400}
                           height={720}
                           priority={index === 0}
-                          unoptimized
+                          unoptimized={project.thumbnail.startsWith('/api/')}
+                          quality={90}
+                          sizes="(min-width: 1280px) 1200px, 100vw"
                           className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-106"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/35 opacity-65 transition-opacity duration-300 group-hover:opacity-45" />
@@ -681,7 +683,9 @@ export default function ProjectsExplorer({ initialProjects }: ProjectsExplorerPr
                         alt={project.imageAlt}
                         width={750}
                         height={460}
-                        unoptimized
+                        unoptimized={project.thumbnail.startsWith('/api/')}
+                        quality={90}
+                        sizes="(min-width: 1024px) 600px, 100vw"
                         className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/25 opacity-70 transition-opacity duration-300 group-hover:opacity-45" />

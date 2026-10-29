@@ -1,5 +1,6 @@
 'use client';
 
+import { submitForm } from '@/lib/forms/submit';
 import { FC, useEffect, useState } from 'react';
 
 interface ApplicationModalProps {
@@ -24,7 +25,7 @@ const ApplicationModal: FC<ApplicationModalProps> = ({ isOpen, onClose, position
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [statusMessage, setStatusMessage] = useState<{
-    type: 'idle' | 'notice';
+    type: 'idle' | 'notice' | 'success';
     title: string;
     details: string;
   }>({
@@ -67,16 +68,23 @@ const ApplicationModal: FC<ApplicationModalProps> = ({ isOpen, onClose, position
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) {return;}
 
-    // Honest reporting: No submission backend currently exists in this template repository.
+    const result = await submitForm('career', { ...formData });
+    if (result.ok) {
+      setStatusMessage({
+        type: 'success',
+        title: 'Application received',
+        details: 'Thank you for applying. Our team will review your application and get back to you by email.',
+      });
+      return;
+    }
     setStatusMessage({
       type: 'notice',
-      title: 'Frontend Validation Complete — Backend Integration Requirement',
-      details:
-        'Your form inputs are validated and ready. A submission backend endpoint (such as an API route or CRM webhook) is pending integration in this codebase. To submit immediately, use the mailto button below to send your completed details directly to careers@arlotechnologies.com.',
+      title: 'We could not submit your application',
+      details: `${result.error} You can also send your details directly to careers@arlotechnologies.com using the button below.`,
     });
   };
 
@@ -128,6 +136,13 @@ Understands Internship is Unpaid: Yes`,
             Please complete the application form below. Zero experience is required — beginners and learners are welcome.
           </p>
         </div>
+
+        {statusMessage.type === 'success' && (
+          <div role="status" className="mb-6 rounded-2xl border border-primary-500/30 bg-primary-500/10 p-5 text-secondary dark:text-accent">
+            <h4 className="mb-2 text-base font-semibold">{statusMessage.title}</h4>
+            <p className="text-tagline-2 leading-relaxed text-secondary/80 dark:text-accent/80">{statusMessage.details}</p>
+          </div>
+        )}
 
         {statusMessage.type === 'notice' && (
           <div className="mb-6 rounded-2xl border border-ns-yellow/40 bg-ns-yellow/10 p-5 text-secondary dark:text-accent">

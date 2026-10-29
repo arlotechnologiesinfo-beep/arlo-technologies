@@ -89,10 +89,9 @@ export async function GET(
         const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
         const chunkSize = end - start + 1;
         const fileStream = fs.createReadStream(localPath, { start, end });
-        // @ts-expect-error Node stream to Web stream conversion
-        const webStream = Readable.toWeb(fileStream);
+        const webStream = Readable.toWeb(fileStream) as unknown as ReadableStream;
 
-        return new Response(webStream as ReadableStream, {
+        return new Response(webStream, {
           status: 206,
           headers: {
             'Content-Range': `bytes ${start}-${end}/${stat.size}`,
@@ -105,10 +104,9 @@ export async function GET(
       }
 
       const fileStream = fs.createReadStream(localPath);
-      // @ts-expect-error Node stream to Web stream conversion
-      const webStream = Readable.toWeb(fileStream);
+      const webStream = Readable.toWeb(fileStream) as unknown as ReadableStream;
 
-      return new Response(webStream as ReadableStream, {
+      return new Response(webStream, {
         status: 200,
         headers: {
           'Content-Length': String(stat.size),
@@ -186,8 +184,7 @@ export async function GET(
       ) {
         webStream = (bodyStream as { transformToWebStream: () => ReadableStream }).transformToWebStream();
       } else if (bodyStream instanceof Readable) {
-        // @ts-expect-error Node stream to Web stream conversion
-        webStream = Readable.toWeb(bodyStream) as ReadableStream;
+        webStream = Readable.toWeb(bodyStream) as unknown as ReadableStream;
       } else {
         webStream = bodyStream as ReadableStream;
       }

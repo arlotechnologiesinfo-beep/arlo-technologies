@@ -73,14 +73,20 @@ const Projects = () => {
                       </div>
 
                       {/* Project Thumbnail */}
-                      <div className={`group relative w-full overflow-hidden rounded-[20px] ${imgHeightClass}`}>
+                      <div
+                        className={`group relative w-full overflow-hidden rounded-[20px] ${
+                          project.thumbnailAspect ? '' : imgHeightClass
+                        }`}
+                        style={project.thumbnailAspect ? { aspectRatio: project.thumbnailAspect } : undefined}>
                         <Image
                           src={project.thumbnail}
                           className="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                           alt={project.name}
                           fill
                           priority={index < 2}
-                          unoptimized
+                          unoptimized={project.thumbnail.startsWith('/api/')}
+                          quality={90}
+                          sizes="(min-width: 1280px) 1200px, 100vw"
                         />
                       </div>
 

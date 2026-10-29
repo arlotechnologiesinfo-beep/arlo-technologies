@@ -4,6 +4,7 @@ import { categoryC_aiProducts } from './categoryC_aiProducts';
 import { categoryD_webDev } from './categoryD_webDev';
 import { categoryE_uiUx } from './categoryE_uiUx';
 import { categoryF_industrySolutions } from './categoryF_industrySolutions';
+import { categoryG_nobleScientific } from './categoryG_nobleScientific';
 import { CaseStudyCategory, ICaseStudyItem } from './types';
 import { webBgCardImages } from '../webBgImages';
 
@@ -11,10 +12,11 @@ export * from './types';
 
 // Map verified Cloudflare R2 client project screenshots
 const clientScreenshotMap: Record<string, string> = {
-  'raveena-sarees': '/api/r2/portfolio/projects/Screenshot%202026-10-20%20195116.png',
-  'revengo': '/api/r2/portfolio/projects/Screenshot%202026-10-20%20195352.png',
-  'career-corner-india': '/api/r2/portfolio/projects/Screenshot%202026-10-20%20195602.png',
+  'raveena-sarees': '/images/projects/raveena-sarees.png',
+  'revengo': '/images/projects/revengo.png',
+  'career-corner-india': '/images/projects/career-corner-india.png',
   'aeli-adops': '/api/r2/portfolio/projects/Screenshot%202026-03-19%20142335.png',
+  'noble-scientific-solutions': '/images/projects/noble-scientific-solutions.png',
 };
 
 const rawCaseStudies: ICaseStudyItem[] = [
@@ -24,6 +26,7 @@ const rawCaseStudies: ICaseStudyItem[] = [
   ...categoryD_webDev, // 16 - 21
   ...categoryE_uiUx, // 22 - 26
   ...categoryF_industrySolutions, // 27 - 36
+  ...categoryG_nobleScientific, // 37
 ];
 
 // Enrich all case studies with Cloudflare R2 web-bg artwork and verified client screenshots
@@ -33,7 +36,6 @@ export const allCaseStudies: ICaseStudyItem[] = rawCaseStudies.map((study, idx) 
     return {
       ...study,
       thumbnail: clientImg,
-      heroImage: clientImg,
     };
   }
 
@@ -42,7 +44,6 @@ export const allCaseStudies: ICaseStudyItem[] = rawCaseStudies.map((study, idx) 
   return {
     ...study,
     thumbnail: r2Image || study.thumbnail,
-    heroImage: r2Image || study.heroImage,
   };
 });
 
@@ -63,7 +64,7 @@ export function getAllCaseStudies(): ICaseStudyItem[] {
 export function getCaseStudyBySlug(slug: string): ICaseStudyItem | undefined {
   const normalizedSlug = slug.toLowerCase().trim();
   const directMatch = allCaseStudies.find((study) => study.slug.toLowerCase() === normalizedSlug);
-  if (directMatch) return directMatch;
+  if (directMatch) {return directMatch;}
 
   // Fallback aliases for legacy links
   if (normalizedSlug === 'bright-path-customer-engagement-and-retention') {

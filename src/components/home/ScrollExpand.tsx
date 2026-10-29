@@ -32,7 +32,7 @@ const ScrollExpand = ({
   // Ensure muted autoplay and intersection observer control
   useEffect(() => {
     const video = videoRef.current;
-    if (!video) return;
+    if (!video) {return;}
 
     video.defaultMuted = true;
     video.muted = true;
@@ -62,7 +62,7 @@ const ScrollExpand = ({
   useGSAP(
     () => {
       const element = scrollExpandRef.current;
-      if (!element) return;
+      if (!element) {return;}
 
       const isMobile = window.innerWidth < 768;
 

@@ -1,3 +1,4 @@
+import ApiForm from '@/components/shared/forms/ApiForm';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -18,7 +19,7 @@ const Contact = () => {
         {/* contact form  */}
         <RevealAnimation delay={0.4}>
           <div className="dark:bg-background-8 mx-auto max-w-[850px] rounded-[20px] bg-white p-6 md:w-full lg:p-[42px]">
-            <form action="#" method="post">
+            <ApiForm type="contact">
               {/* name field  */}
               <fieldset className="mb-8 flex w-full flex-col items-start justify-start gap-2">
                 <label htmlFor="fullName" className="text-tagline-1 text-secondary dark:text-accent font-medium">
@@ -89,7 +90,7 @@ const Contact = () => {
                 aria-label="Submit contact form">
                 Submit
               </button>
-            </form>
+            </ApiForm>
           </div>
         </RevealAnimation>
       </div>
