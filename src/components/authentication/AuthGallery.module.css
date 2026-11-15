@@ -1,0 +1,41 @@
+.mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 86%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 86%, transparent 100%);
+}
+
+.track {
+  will-change: transform;
+}
+
+.up {
+  animation: scroll-up var(--duration, 70s) linear infinite;
+}
+
+.down {
+  animation: scroll-down var(--duration, 85s) linear infinite;
+}
+
+@keyframes scroll-up {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .up,
+  .down {
+    animation: none;
+  }
+}

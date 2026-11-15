@@ -87,6 +87,7 @@ export const footerData: FooterOneData[] = [
   {
     title: 'Products & Solutions',
     links: [
+      { label: 'Sanraksha Vault', href: '/sanraksha' },
       { label: 'Features', href: '/features' },
       { label: 'Our Services', href: '/services' },
       { label: 'Integrations', href: '/integration' },
@@ -120,6 +121,7 @@ export const footerData: FooterOneData[] = [
       { label: 'Security', href: '/security' },
       { label: 'Terms & Conditions', href: '/terms-conditions' },
       { label: 'Privacy Policy', href: '/privacy-policy' },
+      { label: 'Sanraksha Privacy Policy', href: '/sanraksha/privacy-policy' },
       { label: 'Refund Policy', href: '/refund-policy' },
       { label: 'Legal Hub', href: '/legal' },
     ],

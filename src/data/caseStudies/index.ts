@@ -15,7 +15,7 @@ const clientScreenshotMap: Record<string, string> = {
   'raveena-sarees': '/images/projects/raveena-sarees.png',
   'revengo': '/images/projects/revengo.png',
   'career-corner-india': '/images/projects/career-corner-india.png',
-  'aeli-adops': '/api/r2/portfolio/projects/Screenshot%202026-03-19%20142335.png',
+  'aeli-adops': '/images/projects/aeli-adops.png',
   'noble-scientific-solutions': '/images/projects/noble-scientific-solutions.png',
 };
 

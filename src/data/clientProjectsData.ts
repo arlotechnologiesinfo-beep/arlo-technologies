@@ -48,7 +48,8 @@ export const clientProjects: IClientProject[] = [
     category: 'Digital Services',
     description: 'A client website project showcasing the brand through a dedicated digital presence.',
     websiteUrl: 'https://aeliadops.com/',
-    thumbnail: '/api/r2/portfolio/projects/Screenshot%202026-03-19%20142335.png',
+    thumbnail: '/images/projects/aeli-adops.png',
+    thumbnailAspect: 1804 / 872,
     fallbackThumbnail: '/images/ns-img-411.jpg',
   },
   {

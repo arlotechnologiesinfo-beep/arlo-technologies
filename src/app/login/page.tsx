@@ -1,27 +1,21 @@
-import LoginHero from '@/components/authentication/LoginHero';
-import CTA from '@/components/shared/cta/CTA';
+import AuthShell from '@/components/authentication/AuthShell';
+import LoginForm from '@/components/authentication/LoginForm';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Login - Creative Portfolio || Arlo Technologies',
+  title: 'Sign in || Arlo Technologies',
 };
 
 const page = () => {
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <LoginHero />
-      <CTA
-        className="dark:bg-background-6 bg-white"
-        badgeClass="badge-yellow-v2"
-        badgeText="Get Started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        btnClass="hover:btn-secondary dark:hover:btn-accent"
-        ctaBtnText="Get started"
-      />
-    </main>
+    <AuthShell mode="login">
+      <Suspense>
+        <LoginForm />
+      </Suspense>
+    </AuthShell>
   );
 };
 export default page;

@@ -1,27 +1,21 @@
-import SignupHero from '@/components/authentication/SignupHero';
-import CTA from '@/components/shared/cta/CTA';
+import AuthShell from '@/components/authentication/AuthShell';
+import SignupForm from '@/components/authentication/SignupForm';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Signup - Creative Portfolio || Arlo Technologies',
+  title: 'Create your account || Arlo Technologies',
 };
 
 const page = () => {
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <SignupHero />
-      <CTA
-        className="dark:bg-background-6 bg-white"
-        badgeClass="badge-yellow-v2"
-        badgeText="Get Started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        btnClass="hover:btn-secondary dark:hover:btn-accent"
-        ctaBtnText="Get started"
-      />
-    </main>
+    <AuthShell mode="signup">
+      <Suspense>
+        <SignupForm />
+      </Suspense>
+    </AuthShell>
   );
 };
 export default page;
