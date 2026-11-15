@@ -1,11 +1,11 @@
-import About from '@/components/home/About';
-import Blog from '@/components/home/Blog';
-import CTA from '@/components/home/CTA';
-import Hero from '@/components/home/Hero';
-import Process from '@/components/home/Process';
-import Projects from '@/components/home/Projects';
-import Services from '@/components/home/Services';
-import Testimonial from '@/components/home/Testimonial';
+import About from '@/components/portfolio/About';
+import Blog from '@/components/portfolio/Blog';
+import CTA from '@/components/portfolio/CTA';
+import Hero from '@/components/portfolio/Hero';
+import Process from '@/components/portfolio/Process';
+import Projects from '@/components/portfolio/Projects';
+import Services from '@/components/portfolio/Services';
+import Testimonial from '@/components/portfolio/Testimonial';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 

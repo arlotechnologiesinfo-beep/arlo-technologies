@@ -1,46 +1,46 @@
+import { webBgAssets } from '@/data/webBgImages';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
-import { webBgAssets } from '@/data/webBgImages';
 
 const servicesList = [
   {
-    title: 'Web Design & Front-End Development',
-    subtitle: 'High-performance Next.js & React architectures with modern interactivity',
+    title: 'Custom Web & Enterprise Platform Engineering',
+    subtitle: 'High-performance Next.js, React, Node.js, and TypeScript architectures with sub-second performance',
     image: webBgAssets.futuristicRobot,
-    alt: 'Web design and front-end development architecture',
+    alt: 'Custom web and enterprise platform engineering',
     colSpan: 'col-span-12 sm:col-span-6 lg:col-span-4',
     figureClass: 'w-full overflow-hidden rounded-2xl h-[220px]',
   },
   {
-    title: 'UI/UX Design for SaaS & Products',
-    subtitle: 'Intuitive design systems, complex data dashboards, and conversion flows',
+    title: 'Enterprise UI/UX Design & Product Systems',
+    subtitle: 'Scalable design systems, interactive web applications, and intuitive product user experiences',
     image: webBgAssets.futuristicPrism,
-    alt: 'UI and UX product design systems',
+    alt: 'UI and UX enterprise product design systems',
     colSpan: 'col-span-12 sm:col-span-6 lg:col-span-4',
     figureClass: 'w-full overflow-hidden rounded-2xl h-[220px]',
   },
   {
-    title: 'Brand Identity & Visual Direction',
-    subtitle: 'Memorable brand positioning, typography systems, and digital guidelines',
+    title: 'Autonomous AI Agents & Intelligent Automation',
+    subtitle: 'Custom LLM reasoning chains, multi-agent workflows, and practical machine learning integrations',
     image: webBgAssets.heroGradient,
-    alt: 'Brand identity design and digital guidelines',
+    alt: 'Autonomous AI agents and intelligent automation systems',
     colSpan: 'col-span-12 sm:col-span-6 lg:col-span-4',
     figureClass: 'w-full overflow-hidden rounded-2xl h-[220px]',
   },
   {
-    title: 'Framer, Webflow & Modern Platforms',
-    subtitle: 'Rapid go-to-market execution with clean responsive interactions',
+    title: 'Mobile Architecture & Offline-First Security',
+    subtitle: 'Native and cross-platform mobile apps with hardware-backed encryption, SQLCipher, and zero cloud lock-in',
     image: webBgAssets.futuristicPortrait,
-    alt: 'Modern web platforms and CMS development',
+    alt: 'Mobile application architecture and offline-first security',
     colSpan: 'col-span-12 sm:col-span-6 lg:col-span-4',
     figureClass: 'w-full overflow-hidden rounded-2xl h-[220px]',
   },
   {
-    title: 'Art Direction & Strategic Technology Consulting',
-    subtitle: 'End-to-end guidance from conceptualization through enterprise scaling and AI integration',
+    title: 'Strategic Cloud Architecture & Technical Advisory',
+    subtitle: 'End-to-end guidance from architectural blueprints through cloud scalability, zero-trust security, and operational reliability',
     image: webBgAssets.godrays,
-    alt: 'Art direction and strategic technology consulting',
+    alt: 'Strategic cloud architecture and technical advisory',
     colSpan: 'col-span-12 lg:col-span-8',
     figureClass: 'w-full overflow-hidden rounded-2xl h-[220px]',
   },
@@ -52,11 +52,11 @@ const Services = () => {
       <div className="main-container">
         <div className="mb-10 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <h2>What We Can Help You With</h2>
+            <h2>Engineering Capabilities &amp; Services</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <p className="mx-auto max-w-[776px]">
-              From AI-powered innovation to digital experiences, we turn ambitious ideas into impactful solutions.
+            <p className="mx-auto max-w-[776px] text-secondary/80 dark:text-accent/80">
+              From intelligent autonomous AI agents to mission-critical web platforms, we engineer software that solves complex problems and drives business growth.
             </p>
           </RevealAnimation>
         </div>
@@ -94,12 +94,12 @@ const Services = () => {
             <LinkButton
               href="/services"
               className="btn btn-pair-left btn-md w-[90%] md:w-auto shadow-md">
-              Explore services
+              Explore All Services
             </LinkButton>
             <LinkButton
               href="/contact-us"
               className="btn btn-pair-right btn-md w-[90%] md:w-auto shadow-md">
-              Book a call
+              Book Technical Consultation
             </LinkButton>
           </div>
         </RevealAnimation>
@@ -108,4 +108,5 @@ const Services = () => {
   );
 };
 
+Services.displayName = 'Services';
 export default Services;

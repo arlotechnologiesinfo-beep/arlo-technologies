@@ -1,7 +1,55 @@
-import { clientProjects } from '@/data/clientProjectsData';
+import { webBgAssets } from '@/data/webBgImages';
 import Image from 'next/image';
+import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+
+const flagshipSolutions = [
+  {
+    id: 'sanraksha-vault',
+    name: 'Sanraksha — Secure Offline Document Vault',
+    category: 'Flagship Security Product',
+    description:
+      'A private, offline-first personal and family document vault built with AES-256-GCM encryption, SQLCipher, and Android Keystore hardware security. No cloud uploads, no tracking.',
+    href: '/sanraksha',
+    linkLabel: 'Discover Sanraksha',
+    thumbnail: webBgAssets.starryNight,
+    badge: 'Offline-First Security',
+  },
+  {
+    id: 'ai-agents-automation',
+    name: 'Autonomous AI Agents & Enterprise Automation',
+    category: 'Intelligent AI Systems',
+    description:
+      'Custom LLM pipelines, multi-agent systems, and automated cognitive workflows that reduce operational friction and execute complex business logic autonomously.',
+    href: '/services',
+    linkLabel: 'Explore AI Services',
+    thumbnail: webBgAssets.futuristicRobot,
+    badge: 'AI Systems',
+  },
+  {
+    id: 'enterprise-cloud-saas',
+    name: 'High-Scale Cloud & Enterprise SaaS Architectures',
+    category: 'Cloud Engineering',
+    description:
+      'Fault-tolerant Next.js, React, Node.js, and cloud-native microservices designed for high concurrency, sub-second response times, and seamless third-party integrations.',
+    href: '/services',
+    linkLabel: 'View Architecture',
+    thumbnail: webBgAssets.ditherGradient,
+    badge: 'Cloud Platforms',
+  },
+  {
+    id: 'creative-client-portfolio',
+    name: 'Curated Works & Creative Portfolio',
+    category: 'Client Solutions',
+    description:
+      'Our complete showcase of delivered client storefronts, live web platforms, and bespoke digital experiences crafted for ambitious consumer and B2B brands.',
+    href: '/portfolio',
+    linkLabel: 'View 36+ Works',
+    thumbnail: webBgAssets.heroGradient,
+    badge: 'Portfolio Showcase',
+  },
+];
 
 const Projects = () => {
   return (
@@ -9,17 +57,18 @@ const Projects = () => {
       <div className="main-container">
         <div className="mb-10 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <h2>Selected Work</h2>
+            <h2>Flagship Solutions &amp; Engineering Highlights</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <p className="mx-auto max-w-[680px]">
-              Digital experiences crafted for ambitious brands and growing businesses.
+            <p className="mx-auto max-w-[720px] text-secondary/80 dark:text-accent/80">
+              Purpose-built software platforms, privacy-first mobile architecture, and intelligent digital systems
+              engineered for measurable real-world impact.
             </p>
           </RevealAnimation>
         </div>
         <div className="mb-14">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-14">
-            {clientProjects.map((project, index) => {
+            {flagshipSolutions.map((item, index) => {
               const isFullWidth = index % 3 === 0;
               const colSpanClass = isFullWidth ? 'col-span-12' : 'col-span-12 lg:col-span-6';
               const imgHeightClass = isFullWidth
@@ -27,36 +76,19 @@ const Projects = () => {
                 : 'h-[300px] sm:h-[360px] md:max-h-[280px] lg:max-h-[400px] xl:h-[576px]';
 
               return (
-                <div key={project.id} className={colSpanClass}>
+                <div key={item.id} className={colSpanClass}>
                   <RevealAnimation delay={0.2 + (index % 3) * 0.1}>
                     <figure className="space-y-4">
-                      {/* Website/Globe icon link positioned above the project content */}
+                      {/* Category and Link header */}
                       <div className="flex items-center justify-between px-1">
                         <span className="text-tagline-2 text-secondary/60 dark:text-accent/60 font-medium tracking-wide uppercase">
-                          {project.category}
+                          {item.category}
                         </span>
-                        <a
-                          href={project.websiteUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`Visit ${project.name} website`}
-                          title={`Visit ${project.name} website`}
+                        <Link
+                          href={item.href}
+                          aria-label={`Learn more about ${item.name}`}
                           className="group/link flex items-center gap-1.5 rounded-full border border-stroke-2 dark:border-stroke-6 bg-white/80 dark:bg-background-8/80 px-3 py-1 text-tagline-2 text-secondary dark:text-accent transition-all duration-300 hover:border-secondary dark:hover:border-accent hover:shadow-sm">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.75"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="size-3.5 transition-transform duration-300 group-hover/link:scale-110"
-                            aria-hidden="true">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                            <path d="M2 12h20" />
-                          </svg>
-                          <span className="text-xs font-normal">Live Site</span>
+                          <span className="text-xs font-normal">{item.linkLabel}</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
@@ -69,32 +101,37 @@ const Projects = () => {
                               clipRule="evenodd"
                             />
                           </svg>
-                        </a>
+                        </Link>
                       </div>
 
-                      {/* Project Thumbnail */}
-                      <div
-                        className={`group relative w-full overflow-hidden rounded-[20px] ${
-                          project.thumbnailAspect ? '' : imgHeightClass
-                        }`}
-                        style={project.thumbnailAspect ? { aspectRatio: project.thumbnailAspect } : undefined}>
+                      {/* Card Thumbnail */}
+                      <Link
+                        href={item.href}
+                        className={`group relative block w-full overflow-hidden rounded-[20px] ${imgHeightClass}`}>
                         <Image
-                          src={project.thumbnail}
+                          src={item.thumbnail}
                           className="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                          alt={project.name}
+                          alt={item.name}
                           fill
                           priority={index < 2}
-                          unoptimized={project.thumbnail.startsWith('/api/')}
-                          quality={90}
+                          unoptimized
                           sizes="(min-width: 1280px) 1200px, 100vw"
                         />
-                      </div>
+                        <div className="absolute top-4 left-4 flex items-center gap-1.5 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-xs text-white">
+                          <span className="size-2 rounded-full bg-primary-400" />
+                          <span>{item.badge}</span>
+                        </div>
+                      </Link>
 
-                      {/* Project Name and Description */}
+                      {/* Card Title and Description */}
                       <div className="flex flex-col justify-start gap-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4 px-1">
-                        <h3 className="text-heading-6 sm:text-heading-5">{project.name}</h3>
-                        <p className="line-clamp-2 max-w-[380px] text-left sm:text-right text-secondary/70 dark:text-accent/70">
-                          {project.description}
+                        <h3 className="text-heading-6 sm:text-heading-5">
+                          <Link href={item.href} className="hover:text-primary-500 transition-colors">
+                            {item.name}
+                          </Link>
+                        </h3>
+                        <p className="line-clamp-2 max-w-[420px] text-left sm:text-right text-secondary/70 dark:text-accent/70">
+                          {item.description}
                         </p>
                       </div>
                     </figure>
@@ -107,9 +144,9 @@ const Projects = () => {
         <RevealAnimation delay={0.6}>
           <div className="text-center">
             <LinkButton
-              href="/projects"
+              href="/portfolio"
               className="btn btn-primary btn-xl w-[90%] md:w-auto shadow-md">
-              See all projects
+              Explore Full Creative Portfolio &amp; Client Work
             </LinkButton>
           </div>
         </RevealAnimation>
@@ -118,4 +155,5 @@ const Projects = () => {
   );
 };
 
+Projects.displayName = 'Projects';
 export default Projects;

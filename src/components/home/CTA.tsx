@@ -10,8 +10,9 @@ import { V2ConveyorArrow } from '../ui/button/LinkButton';
 import { submitForm } from '@/lib/forms/submit';
 
 const ctaCheckListData = [
-  { id: '1', text: 'Freelance jobs' },
-  { id: '2', text: 'Based in Brooklyn, working globally' },
+  { id: '1', text: 'Enterprise & Startup Engineering' },
+  { id: '2', text: 'Headquartered in Hyderabad, Serving Globally' },
+  { id: '3', text: 'Production-Ready Milestone Delivery' },
 ];
 
 const CTA = () => {
@@ -43,12 +44,12 @@ const CTA = () => {
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2>Let's make something great</h2>
+              <h2>Let&apos;s Build Something Extraordinary</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p className="mx-auto max-w-[568px]">
-                Have a project in mind, or just want to say hello? I'm always open to discussing new ideas,
-                partnerships, or opportunities to collaborate.
+              <p className="mx-auto max-w-[620px]">
+                Have an ambitious software project, need enterprise AI integration, or want to scale your platform?
+                Collaborate with Arlo Technologies to engineer your next technological breakthrough.
               </p>
             </RevealAnimation>
           </div>

@@ -11,10 +11,22 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Home - Creative Portfolio || Arlo Technologies',
+  title: 'Arlo Technologies | Intelligent Software, Digital Products & Engineering Studio',
+  description:
+    'Arlo Technologies engineers intelligent software platforms, modern digital products, and high-impact technology solutions for forward-thinking businesses and startups.',
+  alternates: {
+    canonical: 'https://arlotechnologies.in',
+  },
+  openGraph: {
+    ...defaultMetadata.openGraph,
+    title: 'Arlo Technologies | Intelligent Software, Digital Products & Engineering Studio',
+    description:
+      'Arlo Technologies engineers intelligent software platforms, modern digital products, and high-impact technology solutions for forward-thinking businesses and startups.',
+    url: 'https://arlotechnologies.in',
+  },
 };
 
-const page = () => {
+const HomePage = () => {
   return (
     <main className="bg-background-2 dark:bg-background-5">
       <Hero />
@@ -29,4 +41,5 @@ const page = () => {
   );
 };
 
-export default page;
+HomePage.displayName = 'HomePage';
+export default HomePage;

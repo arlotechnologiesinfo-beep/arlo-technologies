@@ -65,9 +65,9 @@ const Process = () => {
               <h2>How we&apos;ll work together</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p className="mx-auto max-w-[610px]">
-                I follow a process that&apos;s transparent, collaborative, and results-driven—built around clear
-                communication and creative problem-solving.
+              <p className="mx-auto max-w-[640px]">
+                We follow an engineering-first delivery model that&apos;s transparent, collaborative, and results-driven—built around clear
+                communication, agile velocity, and architectural excellence.
               </p>
             </RevealAnimation>
           </div>

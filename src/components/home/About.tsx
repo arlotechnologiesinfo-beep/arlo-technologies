@@ -19,16 +19,16 @@ const About = () => {
               <div className="mx-auto max-w-[508px] space-y-8 text-center md:space-y-14 xl:mx-0 xl:text-left">
                 <div className="space-y-5">
                   <RevealAnimation delay={0.2}>
-                    <span className="badge badge-blur-light dark:!text-accent">ABOUT ARLO</span>
+                    <span className="badge badge-blur-light dark:!text-accent">ABOUT ARLO TECHNOLOGIES</span>
                   </RevealAnimation>
                   <div className="space-y-3">
                     <RevealAnimation delay={0.3}>
-                      <h2 className="text-white">Innovation With Purpose.</h2>
+                      <h2 className="text-white">Engineering With Purpose. Innovation With Rigor.</h2>
                     </RevealAnimation>
                     <RevealAnimation delay={0.4}>
                       <p className="text-accent/60">
-                        Arlo Technologies transforms ideas into intelligent products and digital solutions through AI,
-                        software engineering, and creative thinking.
+                        Arlo Technologies transforms ambitious concepts into intelligent software, enterprise platforms,
+                        and secure digital products through deep engineering expertise, AI automation, and human-centered craft.
                       </p>
                     </RevealAnimation>
                   </div>
@@ -59,7 +59,7 @@ const About = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-accent/60">AI-Powered Innovation — Building intelligent solutions.</p>
+                      <p className="text-accent/60">Autonomous AI Systems — Building intelligent, reliable agent workflows.</p>
                     </li>
                   </RevealAnimation>
 
@@ -75,7 +75,7 @@ const About = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-accent/60">Digital Products — Turning ideas into useful experiences.</p>
+                      <p className="text-accent/60">Enterprise Web &amp; Cloud — Architecting resilient, high-scale software.</p>
                     </li>
                   </RevealAnimation>
                   <RevealAnimation delay={0.8}>
@@ -90,7 +90,7 @@ const About = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-accent/60">Smart Engineering — Creating reliable, scalable software.</p>
+                      <p className="text-accent/60">Privacy &amp; Security by Design — Local-first encryption and hardened architectures.</p>
                     </li>
                   </RevealAnimation>
                   <RevealAnimation delay={0.9}>
@@ -105,7 +105,7 @@ const About = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-accent/60">Future-Ready Solutions — Solving real-world challenges.</p>
+                      <p className="text-accent/60">Long-Term Technical Velocity — Partnering to accelerate product delivery.</p>
                     </li>
                   </RevealAnimation>
                 </ul>
@@ -118,4 +118,5 @@ const About = () => {
   );
 };
 
+About.displayName = 'About';
 export default About;
