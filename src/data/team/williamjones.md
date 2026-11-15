@@ -3,7 +3,7 @@ name: 'William Jones'
 role: 'DevOps Engineer'
 userImg: '/images/ns-avatar-6.png'
 contactInformation:
-  email: 'williamjones@example.com'
+  email: 'williamjones@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1006'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He ensures that products are delivered quickly, reliably, and securely.
 **Senior DevOps Engineer, GlobalSoft**
 
 **2021 – Present**  
-**DevOps Engineer, StaticMania**
+**DevOps Engineer, Arlo Technologies**
 
 ##### Responsibilities
 

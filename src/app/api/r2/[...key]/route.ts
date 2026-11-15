@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
@@ -5,12 +6,12 @@ import path from 'path';
 import { Readable } from 'stream';
 
 function getS3Client(): S3Client | null {
-  const accountId = process.env.R2_ACCOUNT_ID || '2116b960add90907947c388503fa5c62';
-  const endpoint = process.env.R2_ENDPOINT || `https://${accountId}.r2.cloudflarestorage.com`;
+  const accountId = process.env.R2_ACCOUNT_ID;
+  const endpoint = process.env.R2_ENDPOINT || (accountId ? `https://${accountId}.r2.cloudflarestorage.com` : undefined);
   const accessKeyId = process.env.R2_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID;
   const secretAccessKey = process.env.R2_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY;
 
-  if (accessKeyId && secretAccessKey) {
+  if (accessKeyId && secretAccessKey && endpoint) {
     return new S3Client({
       region: 'auto',
       endpoint,
@@ -70,16 +71,18 @@ export async function GET(
     return NextResponse.json({ error: 'Missing object key' }, { status: 400 });
   }
 
-  // 1. Check local file system candidates
+  // 1. Check local file system candidates strictly within public/
+  const publicDir = path.resolve(process.cwd(), 'public');
+  const sanitizedKey = path.normalize(rawObjectKey).replace(/^(\.\.[\/\\])+/, '');
   const localCandidates = [
-    path.join(process.cwd(), 'public', rawObjectKey),
-    path.join(process.cwd(), 'public', 'videos', rawObjectKey),
-    path.join(process.cwd(), 'public', 'videos', path.basename(rawObjectKey)),
-  ];
+    path.resolve(publicDir, sanitizedKey),
+    path.resolve(publicDir, 'videos', sanitizedKey),
+    path.resolve(publicDir, 'videos', path.basename(sanitizedKey)),
+  ].filter((p) => p.startsWith(publicDir));
 
   for (const localPath of localCandidates) {
-    if (fs.existsSync(localPath) && fs.statSync(localPath).isFile()) {
-      const stat = fs.statSync(localPath);
+    if (fs.existsSync(/*turbopackIgnore: true*/ localPath) && fs.statSync(/*turbopackIgnore: true*/ localPath).isFile()) {
+      const stat = fs.statSync(/*turbopackIgnore: true*/ localPath);
       const contentType = getContentType(localPath);
       const range = req.headers.get('range');
 
@@ -88,7 +91,7 @@ export async function GET(
         const start = parseInt(parts[0], 10);
         const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
         const chunkSize = end - start + 1;
-        const fileStream = fs.createReadStream(localPath, { start, end });
+        const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ localPath, { start, end });
         const webStream = Readable.toWeb(fileStream) as unknown as ReadableStream;
 
         return new Response(webStream, {
@@ -103,7 +106,7 @@ export async function GET(
         });
       }
 
-      const fileStream = fs.createReadStream(localPath);
+      const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ localPath);
       const webStream = Readable.toWeb(fileStream) as unknown as ReadableStream;
 
       return new Response(webStream, {

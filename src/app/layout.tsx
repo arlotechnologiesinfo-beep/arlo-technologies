@@ -1,7 +1,6 @@
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import Preloader, { preloaderSkipScript } from '@/components/shared/Preloader';
-import DemoShowcase from '@/components/shared/demo-showcase';
 import Footer from '@/components/shared/footer/Footer';
 import { ScrollProgress } from '@/components/shared/motion/MotionPrimitives';
 import SiteChrome from '@/components/shared/SiteChrome';
@@ -34,12 +33,7 @@ export default function RootLayout({
             <SmoothScrollProvider>
               <ScrollProgress />
               <SiteChrome
-                top={
-                  <>
-                    <Navbar />
-                    <DemoShowcase activeDemoId={18} />
-                  </>
-                }
+                top={<Navbar />}
                 bottom={<Footer />}>
                 {children}
               </SiteChrome>

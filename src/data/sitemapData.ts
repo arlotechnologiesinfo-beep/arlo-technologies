@@ -89,6 +89,14 @@ export const sitemapCategories: SitemapCategory[] = [
       'Engineered products, intelligent services, and modular components designed to scale business operations and software velocity.',
     items: [
       {
+        id: 'sanraksha',
+        name: 'Sanraksha Document Vault',
+        href: '/sanraksha',
+        description: 'Offline-first, hardware-encrypted personal and family document vault for Android with zero cloud transmission.',
+        badge: 'Product',
+        keywords: ['sanraksha', 'vault', 'document vault', 'android app', 'offline', 'encryption', 'aadhaar masking', 'glovebox'],
+      },
+      {
         id: 'features',
         name: 'Features',
         href: '/features',
@@ -266,6 +274,14 @@ export const sitemapCategories: SitemapCategory[] = [
         description: 'How we collect, store, safeguard, and manage personal and organizational data in full respect of privacy standards.',
         badge: 'Privacy',
         keywords: ['privacy', 'privacy policy', 'data', 'cookies', 'gdpr', 'confidentiality'],
+      },
+      {
+        id: 'sanraksha-privacy-policy',
+        name: 'Sanraksha Privacy Policy',
+        href: '/sanraksha/privacy-policy',
+        description: 'Official Google Play compliant privacy policy and data governance disclosures for the Sanraksha Android application.',
+        badge: 'Product Privacy',
+        keywords: ['sanraksha privacy', 'vault privacy', 'android privacy policy', 'dpdp', 'google play data safety'],
       },
       {
         id: 'refund-policy',

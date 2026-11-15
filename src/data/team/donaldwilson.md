@@ -3,7 +3,7 @@ name: 'Donald Wilson'
 role: 'Cloud Engineer'
 userImg: '/images/ns-avatar-4.png'
 contactInformation:
-  email: 'donaldwilson@example.com'
+  email: 'donaldwilson@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1015'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He ensures applications run reliably and securely on cloud platforms.
 **Senior Cloud Engineer, GlobalSoft**
 
 **2021 – Present**  
-**Cloud Engineer, StaticMania**
+**Cloud Engineer, Arlo Technologies**
 
 ##### Responsibilities
 

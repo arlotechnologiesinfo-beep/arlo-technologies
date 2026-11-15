@@ -37,7 +37,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow Nora F. on Twitter">
+                <Link href="/testimonial" aria-label="Follow Nora F. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -46,7 +46,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 &quot;I was skeptical at first, but the results speak for themselves. I landed an interview at my top
                 company!&quot;
               </blockquote>
@@ -77,7 +77,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow Nora F. on Twitter">
+                <Link href="/testimonial" aria-label="Follow Nora F. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -86,7 +86,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 “The templates and AI suggestions made everything effortless. I finally have a resume that feels
                 professional.”
               </blockquote>
@@ -117,7 +117,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow Katherine M. on Twitter">
+                <Link href="/testimonial" aria-label="Follow Katherine M. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -126,7 +126,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 “The AI feedback was spot on. It fixed what I couldn’t see.”
               </blockquote>
             </div>
@@ -156,7 +156,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow David R. on Twitter">
+                <Link href="/testimonial" aria-label="Follow David R. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -165,7 +165,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 “NestSaaS turned my generic resume into a powerful tool. I received 3 interview calls within two weeks!”
               </blockquote>
             </div>
@@ -195,7 +195,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow Joel G. on Twitter">
+                <Link href="/testimonial" aria-label="Follow Joel G. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -204,7 +204,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 “The AI suggestions made everything effortless. I finally have a resume that feels professional.”
               </blockquote>
             </div>
@@ -234,7 +234,7 @@ const TestimonialLarge = () => {
             <div className="space-y-5">
               <div className="flex items-center justify-between">
                 <TestimonialStar />
-                <Link href="https://x.com/" target="_blank" rel="noopener" aria-label="Follow James D. on Twitter">
+                <Link href="/testimonial" aria-label="Follow James D. on Twitter">
                   <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} viewBox="0 0 25 25" fill="none">
                     <path
                       d="M17.8441 5.15234H20.6042L14.5741 11.9297L21.668 21.1523H16.1136L11.7631 15.5589L6.7852 21.1523H4.02341L10.4731 13.9031L3.66797 5.15234H9.36342L13.2959 10.265L17.8441 5.15234ZM16.8753 19.5277H18.4048L8.53238 6.69162H6.89117L16.8753 19.5277Z"
@@ -243,7 +243,7 @@ const TestimonialLarge = () => {
                   </svg>
                 </Link>
               </div>
-              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" cite="https://x.com/">
+              <blockquote className="font-inter-tight text-tagline-1 text-secondary font-normal" >
                 “From job hunting chaos to clarity this tool saved me time and helped me land my dream job.”
               </blockquote>
             </div>

@@ -3,7 +3,7 @@ name: 'Robert Johnson'
 role: 'Backend Developer'
 userImg: '/images/ns-avatar-3.png'
 contactInformation:
-  email: 'robertjohnson@example.com'
+  email: 'robertjohnson@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1003'
 social:
   facebook: 'https://facebook.com'
@@ -38,7 +38,7 @@ Contributed to large-scale projects, improving product stability and implementin
 Led projects that increased product adoption and customer satisfaction across multiple platforms.
 
 **2021 – Present**  
-**Backend Developer, StaticMania**  
+**Backend Developer, Arlo Technologies**  
 Plays a key role in client projects, delivering scalable and innovative solutions with a user-first approach.
 
 ##### Responsibilities

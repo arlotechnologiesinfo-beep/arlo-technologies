@@ -38,7 +38,7 @@ Worked on design systems and enhanced user experience for Creative Cloud product
 Redesigned Shopify’s admin dashboard used by millions of merchants worldwide, improving usability and engagement.
 
 **2020 – Present**  
-**Lead Designer, StaticMania**  
+**Lead Designer, Arlo Technologies**  
 Heads a team of designers working on SaaS, fintech, and eCommerce projects. Leads client workshops, creates design systems, and ensures brand consistency across all deliverables.
 
 ##### Responsibilities

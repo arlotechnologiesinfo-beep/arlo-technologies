@@ -3,7 +3,7 @@ name: 'Anthony Lopez'
 role: 'Product Manager'
 userImg: '/images/ns-avatar-2.png'
 contactInformation:
-  email: 'anthonylopez@example.com'
+  email: 'anthonylopez@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1013'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He bridges the gap between business goals, user needs, and technical execution.
 **Senior Product Manager, GlobalSoft**
 
 **2021 – Present**  
-**Product Manager, StaticMania**
+**Product Manager, Arlo Technologies**
 
 ##### Responsibilities
 

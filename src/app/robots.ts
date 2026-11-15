@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://arlotechnologies.com/sitemap.xml',
+    sitemap: 'https://arlotechnologies.in/sitemap.xml',
   };
 }

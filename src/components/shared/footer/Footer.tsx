@@ -70,7 +70,7 @@ const Footer = () => {
                     <MotionIconLink
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.linkedin.com"
+                      href="https://www.linkedin.com/company/arlo-technologies"
                       className="footer-social-link text-white hover:text-primary-500">
                       <span className="sr-only">LinkedIn</span>
                       <Image className="size-5" src={linkedin} alt="LinkedIn" />
@@ -79,7 +79,7 @@ const Footer = () => {
                     <MotionIconLink
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.instagram.com"
+                      href="https://www.instagram.com/arlotechnologies"
                       className="footer-social-link text-white hover:text-primary-500">
                       <span className="sr-only">Instagram</span>
                       <Image className="size-5" src={instagram} alt="Instagram" />
@@ -88,7 +88,7 @@ const Footer = () => {
                     <MotionIconLink
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.youtube.com"
+                      href="https://www.youtube.com/@arlotechnologies"
                       className="footer-social-link text-white hover:text-primary-500">
                       <span className="sr-only">YouTube</span>
                       <Image className="size-5" src={youtube} alt="YouTube" />
@@ -97,7 +97,7 @@ const Footer = () => {
                     <MotionIconLink
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://x.com"
+                      href="https://x.com/arlotechnologies"
                       className="footer-social-link text-white hover:text-primary-500 flex items-center justify-center size-5">
                       <span className="sr-only">X (formerly Twitter)</span>
                       <XIcon className="size-4 fill-white" />

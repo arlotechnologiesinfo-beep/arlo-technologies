@@ -3,7 +3,7 @@ name: 'Matthew Hernandez'
 role: 'Marketing Manager'
 userImg: '/images/ns-avatar-1.png'
 contactInformation:
-  email: 'matthewhernandez@example.com'
+  email: 'matthewhernandez@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1012'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He has helped companies scale their reach through innovative strategies and data
 **Senior Marketing Manager, GlobalSoft**
 
 **2021 – Present**  
-**Marketing Manager, StaticMania**
+**Marketing Manager, Arlo Technologies**
 
 ##### Responsibilities
 

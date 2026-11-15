@@ -13,52 +13,47 @@ const Content = () => {
               <p>
                 The{' '}
                 <Link href="/" className="text-primary-500">
-                  https://www.Arlo Technologies.ai
+                  https://arlotechnologies.in
                 </Link>{' '}
                 website is published by: <br />
-                Arlo Technologies is registered in the Trade and Companies Register under number 000000000. <br />
-                Registered office: 45 Innovation Avenue, Level 3 – San Francisco, CA 94107, USA <br />
-                Intracommunity VAT number: US000000000 <br />
-                E-mail address:
-                <Link href="mailto:contact@Arlo Technologies.ai" className="text-primary-500">
-                  contact@Arlo Technologies.ai
-                </Link>
+                <strong>Arlo Technologies India</strong> <br />
+                Operational Office: H No. 11, 13-746, Road No. 5, Dwarka Nagar, Kothapet, Hyderabad, Telangana 500035, India <br />
+                Contact Email:{' '}
+                <Link href="mailto:contact@arlotechnologies.in" className="text-primary-500">
+                  contact@arlotechnologies.in
+                </Link>{' '}
+                | Phone: +91 9494900475
               </p>
             </div>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
             <div className="space-y-3 py-8">
-              <h2 className="text-heading-4 font-normal">Director of publication :</h2>
-              <p>Mr. Alex Turner, Chief Executive Officer</p>
+              <h2 className="text-heading-4 font-normal">Corporate Governance &amp; Grievance Redressal:</h2>
+              <p>
+                Grievance Officer: Designated under the Information Technology Act, 2000 &amp; DPDP Act, 2023. <br />
+                Email:{' '}
+                <Link href="mailto:grievance@arlotechnologies.in" className="text-primary-500">
+                  grievance@arlotechnologies.in
+                </Link>
+              </p>
             </div>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
             <div className="space-y-3 py-8">
-              <h2 className="text-heading-4 font-normal">Hosting provider:</h2>
+              <h2 className="text-heading-4 font-normal">Hosting Provider &amp; Infrastructure:</h2>
               <p>
-                The{' '}
-                <Link href="/" className="text-primary-500">
-                  https://www.Arlo Technologies.ai
-                </Link>
-                <br />
-                website is hosted by: Vercel, Inc. <br />
-                Headquarters: 440 N Barranca Ave #4133, Covina, CA 91723, USA
-                <br />
-                Email:
-                <Link href="mailto:support@vercel.com" className="text-primary-500">
-                  support@vercel.com
-                </Link>
+                This web platform and services are hosted across globally distributed cloud infrastructure with Anycast CDN edge networks and high availability.
               </p>
             </div>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <div className="space-y-3 py-8">
-              <h2 className="text-heading-4 font-normal">Development:</h2>
+              <h2 className="text-heading-4 font-normal">Engineering &amp; Design:</h2>
               <p>
-                This website has been designed and developed by Arlo Technologies Design Studio. <br />
+                Architected, designed, and developed in-house by Arlo Technologies India. <br />
                 Website:{' '}
                 <Link href="/" className="text-primary-500">
-                  https://www.Arlo Technologies.design
+                  https://arlotechnologies.in
                 </Link>
               </p>
             </div>

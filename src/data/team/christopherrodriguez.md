@@ -3,7 +3,7 @@ name: 'Christopher Rodriguez'
 role: 'Software Architect'
 userImg: '/images/ns-avatar-10.png'
 contactInformation:
-  email: 'christopherrodriguez@example.com'
+  email: 'christopherrodriguez@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1010'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He focuses on creating software frameworks that ensure maintainability and perfo
 **Senior Software Architect, GlobalSoft**
 
 **2021 – Present**  
-**Software Architect, StaticMania**
+**Software Architect, Arlo Technologies**
 
 ##### Responsibilities
 

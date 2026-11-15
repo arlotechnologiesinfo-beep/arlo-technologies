@@ -3,7 +3,7 @@ name: 'Steven Anderson'
 role: 'Business Analyst'
 userImg: '/images/ns-avatar-5.png'
 contactInformation:
-  email: 'stevenanderson@example.com'
+  email: 'stevenanderson@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1016'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He ensures teams build products that align with client and user requirements.
 **Senior Business Analyst, GlobalSoft**
 
 **2021 – Present**  
-**Business Analyst, StaticMania**
+**Business Analyst, Arlo Technologies**
 
 ##### Responsibilities
 

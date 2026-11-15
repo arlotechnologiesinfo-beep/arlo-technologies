@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
-export const DEFAULT_URL = 'https://next-saas-next.vercel.app/';
-export const DEFAULT_TITLE = 'Arlo Technologies - Software, SaaS & Startup Tailwind Template';
+export const DEFAULT_URL = 'https://arlotechnologies.in';
+export const DEFAULT_TITLE = 'Arlo Technologies | Intelligent Software, Digital Products & Engineering Studio';
 export const DEFAULT_DESCRIPTION =
-  'Arlo Technologies - the ultimate collection of 38+ premium HTML templates for SaaS businesses and startups. Built with Tailwind CSS, featuring responsive design, authentication flows, pricing pages, and modern UI components. Perfect for web applications and digital products.';
-export const DEFAULT_IMAGE_URL = 'https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg';
+  'Arlo Technologies engineers intelligent software platforms, modern digital products, and high-impact technology solutions for forward-thinking businesses and startups.';
+export const DEFAULT_IMAGE_URL = 'https://arlotechnologies.in/images/shared/arlo-logo-dark.png';
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),

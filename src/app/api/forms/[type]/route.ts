@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { createHash } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { FORM_TYPES, FormType, limits, normalizers, schemas, tables } from '@/lib/forms/schemas';
@@ -29,7 +30,9 @@ const isSameOrigin = (req: NextRequest) => {
     return true; // non-browser clients; rate limiting still applies
   }
   try {
-    return new URL(origin).host === req.headers.get('host');
+    const originHost = new URL(origin).host;
+    const host = req.headers.get('x-forwarded-host') || req.headers.get('host');
+    return Boolean(host && originHost === host);
   } catch {
     return false;
   }

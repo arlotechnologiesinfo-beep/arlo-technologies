@@ -1,6 +1,6 @@
-# Arlo Technologies - Creative Portfolio Template
+# Arlo Technologies - Digital Portfolio & Engineering Platform
 
-A comprehensive, modern Next.js 16 Creative Portfolio template with a beautiful homepage and complete inner pages. Built with React 19, TypeScript, Tailwind CSS 4, and cutting-edge web technologies for creative professionals, agencies, and portfolio websites.
+The official digital portfolio, agency showcase, and software solutions platform for Arlo Technologies India. Built with Next.js 16, React 19, TypeScript, Tailwind CSS 4, and modern web technologies to present our engineering capabilities, software products (including Sanraksha Secure Document Vault), bespoke client case studies, and corporate governance frameworks.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.0.8-black)
 ![React](https://img.shields.io/badge/React-19.2.1-blue)

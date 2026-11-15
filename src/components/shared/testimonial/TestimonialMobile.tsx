@@ -26,7 +26,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar1,
     quote:
       'This platform transformed my creative process. The intuitive design tools and AI assistance helped me create stunning visuals in half the time.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
   {
     id: '2',
@@ -35,7 +35,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar2,
     quote:
       'The analytics dashboard gives me insights I never had before. Our campaign performance improved by 40% in just two months.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
   {
     id: '3',
@@ -44,7 +44,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar3,
     quote:
       'Streamlined our entire workflow. What used to take hours now takes minutes. The team productivity has skyrocketed.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
   {
     id: '4',
@@ -53,7 +53,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar4,
     quote:
       'The automated reporting features saved me 15 hours per week. I can now focus on strategic analysis instead of data crunching.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
   {
     id: '5',
@@ -62,7 +62,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar5,
     quote:
       'Our sales pipeline visibility improved dramatically. The CRM integration made tracking deals effortless and increased our close rate by 25%.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
   {
     id: '6',
@@ -71,7 +71,7 @@ const testimonialsData: TestimonialData[] = [
     avatar: avatar6,
     quote:
       'The development tools and integrations are top-notch. Deploying code has never been this smooth and reliable.',
-    xUrl: 'https://x.com/',
+    xUrl: '/testimonial',
   },
 ];
 

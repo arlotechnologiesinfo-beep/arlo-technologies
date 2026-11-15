@@ -3,7 +3,7 @@ name: 'Paul Thomas'
 role: 'Content Strategist'
 userImg: '/images/ns-avatar-6.png'
 contactInformation:
-  email: 'paulthomas@example.com'
+  email: 'paulthomas@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1017'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He helps brands grow through storytelling, SEO-focused strategies, and engaging 
 **Senior Content Strategist, GlobalSoft**
 
 **2021 – Present**  
-**Content Strategist, StaticMania**
+**Content Strategist, Arlo Technologies**
 
 ##### Responsibilities
 

@@ -3,7 +3,7 @@ name: 'David Brown'
 role: 'UI/UX Designer'
 userImg: '/images/ns-avatar-5.png'
 contactInformation:
-  email: 'davidbrown@example.com'
+  email: 'davidbrown@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1005'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He focuses on building user-friendly experiences that combine creativity with re
 **Senior UI/UX Designer, GlobalSoft**
 
 **2021 – Present**  
-**UI/UX Designer, StaticMania**
+**UI/UX Designer, Arlo Technologies**
 
 ##### Responsibilities
 

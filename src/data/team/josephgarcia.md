@@ -3,7 +3,7 @@ name: 'Joseph Garcia'
 role: 'Full Stack Developer'
 userImg: '/images/ns-avatar-7.png'
 contactInformation:
-  email: 'josephgarcia@example.com'
+  email: 'josephgarcia@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1007'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He has delivered scalable, high-performance applications across multiple industr
 **Senior Full Stack Developer, GlobalSoft**
 
 **2021 – Present**  
-**Full Stack Developer, StaticMania**
+**Full Stack Developer, Arlo Technologies**
 
 ##### Responsibilities
 

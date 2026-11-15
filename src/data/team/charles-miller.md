@@ -3,7 +3,7 @@ name: 'Charles Miller'
 role: 'SEO Specialist'
 userImg: '/images/ns-avatar-8.png'
 contactInformation:
-  email: 'charlesmiller@example.com'
+  email: 'charlesmiller@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1008'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He ensures brands gain visibility and attract organic traffic through proven str
 **Senior SEO Specialist, GlobalSoft**
 
 **2021 – Present**  
-**SEO Specialist, StaticMania**
+**SEO Specialist, Arlo Technologies**
 
 ##### Responsibilities
 

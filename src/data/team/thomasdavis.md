@@ -3,7 +3,7 @@ name: 'Thomas Davis'
 role: 'Mobile App Developer'
 userImg: '/images/ns-avatar-9.png'
 contactInformation:
-  email: 'thomasdavis@example.com'
+  email: 'thomasdavis@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1009'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He creates high-performance apps that deliver seamless user experiences on iOS a
 **Senior Mobile Developer, GlobalSoft**
 
 **2021 – Present**  
-**Mobile App Developer, StaticMania**
+**Mobile App Developer, Arlo Technologies**
 
 ##### Responsibilities
 

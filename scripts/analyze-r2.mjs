@@ -23,20 +23,21 @@ for (const envFile of envFiles) {
   }
 }
 
-const accountId = process.env.R2_ACCOUNT_ID || '2116b960add90907947c388503fa5c62';
+const accountId = process.env.R2_ACCOUNT_ID;
 const bucketName = process.env.R2_BUCKET_NAME || 'arlo-technologies';
-const endpoint = process.env.R2_ENDPOINT || `https://${accountId}.r2.cloudflarestorage.com`;
+const endpoint = process.env.R2_ENDPOINT || (accountId ? `https://${accountId}.r2.cloudflarestorage.com` : undefined);
 const accessKeyId = process.env.R2_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID;
 const secretAccessKey = process.env.R2_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY;
 
 console.log('--- Cloudflare R2 Bucket Analyzer ---');
-console.log(`Endpoint:   ${endpoint}`);
+console.log(`Endpoint:   ${endpoint || 'Not set'}`);
 console.log(`Bucket:     ${bucketName}`);
-console.log(`Account ID: ${accountId}`);
+console.log(`Account ID: ${accountId || 'Not set'}`);
 
-if (!accessKeyId || !secretAccessKey) {
+if (!accountId || !accessKeyId || !secretAccessKey) {
   console.log('\n[!] Missing R2 Credentials.');
-  console.log('Please set R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY in .env.local:');
+  console.log('Please set R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, and R2_SECRET_ACCESS_KEY in .env.local:');
+  console.log('  R2_ACCOUNT_ID="your_cloudflare_account_id"');
   console.log('  R2_ACCESS_KEY_ID="your_r2_access_key_id"');
   console.log('  R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"');
   process.exit(1);

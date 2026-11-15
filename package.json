@@ -10,8 +10,7 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "r2:analyze": "node scripts/analyze-r2.mjs",
-    "postinstall": "tsx folder-rename.ts --utb"
+    "r2:analyze": "node scripts/analyze-r2.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1156.0",

@@ -48,10 +48,10 @@ const Reviews = () => {
 
                       {/* social link  */}
                       <Link
-                        href="https://x.com"
+                        href="https://x.com/arlotechnologies"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Follow ${testimonial.name} on X`}
+                        aria-label={`View ${testimonial.name}'s review on X`}
                         className="bg-background-2 dark:bg-background-5 flex size-9 items-center justify-center rounded-full hover:bg-primary-500 hover:text-white transition-colors">
                         <span className="size-[13px]">
                           <XIcon />

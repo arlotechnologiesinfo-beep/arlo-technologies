@@ -3,7 +3,7 @@ name: 'Michael Williams'
 role: 'Project Manager'
 userImg: '/images/ns-avatar-4.png'
 contactInformation:
-  email: 'michaelwilliams@example.com'
+  email: 'michaelwilliams@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1004'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He has worked with diverse teams and industries, consistently leading projects t
 **Senior Project Manager, GlobalSoft**
 
 **2021 – Present**  
-**Project Manager, StaticMania**
+**Project Manager, Arlo Technologies**
 
 ##### Responsibilities
 

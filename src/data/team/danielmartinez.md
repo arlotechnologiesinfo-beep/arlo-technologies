@@ -3,7 +3,7 @@ name: 'Daniel Martinez'
 role: 'QA Engineer'
 userImg: '/images/ns-avatar-11.png'
 contactInformation:
-  email: 'danielmartinez@example.com'
+  email: 'danielmartinez@arlotechnologies.in'
   phoneNumber: '+1 (555) 100-1011'
 social:
   facebook: 'https://facebook.com'
@@ -34,7 +34,7 @@ He ensures products meet the highest standards before reaching end-users.
 **Senior QA Engineer, GlobalSoft**
 
 **2021 – Present**  
-**QA Engineer, StaticMania**
+**QA Engineer, Arlo Technologies**
 
 ##### Responsibilities
 

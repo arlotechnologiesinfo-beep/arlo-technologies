@@ -1,7 +1,7 @@
 import { getAllCaseStudies } from '@/data/caseStudies';
 
 export async function GET() {
-  const baseUrl = 'https://arlotechnologies.com';
+  const baseUrl = 'https://arlotechnologies.in';
 
   const staticRoutes = [
     '',
@@ -30,6 +30,8 @@ export async function GET() {
     '/refund-policy',
     '/pricing',
     '/legal',
+    '/sanraksha',
+    '/sanraksha/privacy-policy',
     '/contact-us',
     '/sitemap',
   ];
