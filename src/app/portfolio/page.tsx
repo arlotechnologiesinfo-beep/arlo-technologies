@@ -1,0 +1,45 @@
+import About from '@/components/home/About';
+import Blog from '@/components/home/Blog';
+import CTA from '@/components/home/CTA';
+import Hero from '@/components/home/Hero';
+import Process from '@/components/home/Process';
+import Projects from '@/components/home/Projects';
+import Services from '@/components/home/Services';
+import Testimonial from '@/components/home/Testimonial';
+import { defaultMetadata } from '@/utils/generateMetaData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  ...defaultMetadata,
+  title: 'Portfolio - Creative Portfolio || Arlo Technologies',
+  description:
+    'Explore the creative portfolio and engineering showcase of Arlo Technologies. Delivering intelligent software platforms, modern digital products, and high-impact technology solutions.',
+  alternates: {
+    canonical: 'https://arlotechnologies.in/portfolio',
+  },
+  openGraph: {
+    ...defaultMetadata.openGraph,
+    title: 'Portfolio - Creative Portfolio || Arlo Technologies',
+    description:
+      'Explore the creative portfolio and engineering showcase of Arlo Technologies.',
+    url: 'https://arlotechnologies.in/portfolio',
+  },
+};
+
+const PortfolioPage = () => {
+  return (
+    <main className="bg-background-2 dark:bg-background-5">
+      <Hero />
+      <About />
+      <Projects />
+      <Services />
+      <Process />
+      <Testimonial />
+      <Blog />
+      <CTA />
+    </main>
+  );
+};
+
+PortfolioPage.displayName = 'PortfolioPage';
+export default PortfolioPage;

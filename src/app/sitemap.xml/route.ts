@@ -13,6 +13,8 @@ export async function GET() {
     '/integration',
     '/use-case',
     '/analytics',
+    '/projects',
+    '/portfolio',
     '/case-study',
     '/success-stories',
     '/blog',

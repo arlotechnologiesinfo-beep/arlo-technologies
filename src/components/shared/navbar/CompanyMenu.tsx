@@ -130,6 +130,15 @@ const CompanyMenu = ({
 
             <CompanyMenuItemLink
               setMenuDropdownId={setMenuDropdownId}
+              href="/portfolio"
+              title="Portfolio"
+              description="Creative portfolio and engineering showcase"
+              icon={<CaseStudyICon />}
+              showDivider={true}
+            />
+
+            <CompanyMenuItemLink
+              setMenuDropdownId={setMenuDropdownId}
               href="/projects"
               title="All Projects"
               description="Interactive grid of our complete works"

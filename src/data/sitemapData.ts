@@ -56,6 +56,14 @@ export const sitemapCategories: SitemapCategory[] = [
         keywords: ['career', 'careers', 'jobs', 'hiring', 'openings', 'culture', 'work with us'],
       },
       {
+        id: 'portfolio',
+        name: 'Portfolio',
+        href: '/portfolio',
+        description: 'The creative portfolio and engineering showcase of Arlo Technologies, featuring selected works and technology solutions.',
+        badge: 'Portfolio',
+        keywords: ['portfolio', 'creative portfolio', 'showcase', 'work', 'projects'],
+      },
+      {
         id: 'selected-work',
         name: 'Selected Work',
         href: '/case-study',
