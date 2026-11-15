@@ -17,7 +17,6 @@
     "@gsap/react": "^2.1.2",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
-    "classnames": "^2.5.1",
     "framer-motion": "^14.6.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.13.0",
@@ -53,7 +52,6 @@
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
-    "tsx": "^4.21.0",
     "typescript": "^5"
   },
   "resolutions": {
