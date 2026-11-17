@@ -426,105 +426,50 @@ Common Styles all over the sites
 }
 
 /* ============================================
-   SMOOTH GLASSMORPHISM NAVIGATION
+   CLEAN WHITE NAVIGATION
    ============================================ */
 .glass-header {
   position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(240, 246, 255, 0.4) 50%, rgba(255, 255, 255, 0.55) 100%);
-  backdrop-filter: blur(22px) saturate(190%);
-  -webkit-backdrop-filter: blur(22px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow:
-    0 12px 36px -8px rgba(11, 99, 229, 0.16),
-    0 4px 14px -2px rgba(15, 23, 42, 0.06),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95),
-    inset 0 -1px 1px 0 rgba(255, 255, 255, 0.35);
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06);
+  transition: all 0.3s ease;
   opacity: 1;
-}
-
-/* soft moving sheen across the glass */
-.glass-header::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.55) 48%, transparent 66%);
-  background-size: 250% 100%;
-  background-position: 130% 0;
-  animation: glassSheen 7s ease-in-out 1.2s infinite;
-  mix-blend-mode: overlay;
-}
-
-@keyframes glassSheen {
-  0%,
-  55% {
-    background-position: 130% 0;
-  }
-  100% {
-    background-position: -60% 0;
-  }
 }
 
 .glass-header.is-scrolled {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.78) 0%, rgba(240, 246, 255, 0.62) 50%, rgba(255, 255, 255, 0.74) 100%);
-  border-color: rgba(255, 255, 255, 0.85);
-  box-shadow:
-    0 16px 40px -8px rgba(11, 99, 229, 0.2),
-    0 6px 16px -3px rgba(15, 23, 42, 0.08),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 1),
-    inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4);
+  background: #ffffff;
+  border-color: rgba(203, 213, 225, 0.95);
+  box-shadow: 0 10px 25px -4px rgba(15, 23, 42, 0.1);
 }
 
 .dark .glass-header {
-  background: linear-gradient(135deg, rgba(30, 41, 80, 0.5) 0%, rgba(15, 23, 42, 0.38) 50%, rgba(30, 41, 80, 0.48) 100%);
-  backdrop-filter: blur(26px) saturate(190%);
-  -webkit-backdrop-filter: blur(26px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow:
-    0 18px 40px -10px rgba(0, 0, 0, 0.6),
-    0 0 28px -6px rgba(11, 99, 229, 0.25),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
+  background: #182238;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.4);
   opacity: 1;
 }
 
-.dark .glass-header::after {
-  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.18) 48%, transparent 66%);
-  mix-blend-mode: screen;
-}
-
 .dark .glass-header.is-scrolled {
-  background: linear-gradient(135deg, rgba(30, 41, 80, 0.7) 0%, rgba(15, 23, 42, 0.58) 50%, rgba(30, 41, 80, 0.68) 100%);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .glass-header::after {
-    animation: none;
-  }
+  background: #182238;
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.55);
 }
 
 .glass-dropdown {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
   box-shadow: 
-    0 20px 50px -10px rgba(0, 0, 0, 0.12),
-    0 8px 20px rgba(0, 0, 0, 0.04),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+    0 20px 40px -10px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .dark .glass-dropdown {
-  background: rgba(15, 23, 42, 0.88);
-  backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  background: #182238;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 
-    0 25px 60px -10px rgba(0, 0, 0, 0.75),
-    0 8px 24px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+    0 25px 50px -10px rgba(0, 0, 0, 0.6),
+    0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Glass CTA & Footer Aesthetics */

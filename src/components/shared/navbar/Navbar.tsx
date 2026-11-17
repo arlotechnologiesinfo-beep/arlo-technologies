@@ -43,8 +43,8 @@ const Navbar = () => {
         )}>
         <div
           className={cn(
-            'glass-header header-reveal mx-auto flex items-center justify-between rounded-full px-3 py-2 xl:py-1.5 shadow-md',
-            isScrolled && 'is-scrolled shadow-lg',
+            'glass-header header-reveal mx-auto flex items-center justify-between rounded-full bg-white dark:bg-background-6 border border-stroke-3 dark:border-stroke-7 px-3 py-2 xl:py-1.5 shadow-sm transition-all duration-300',
+            isScrolled && 'shadow-md border-stroke-3/90 dark:border-stroke-7/90',
           )}>
           <div className="flex items-center justify-center">
             <Link href="/" className="group/logo inline-flex items-center py-1 pl-1 pr-2 transition-all duration-300">
@@ -76,7 +76,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleMenuHover(dataMenu)}>
                   <button
                     type="button"
-                    className="hover:bg-white/80 dark:hover:bg-white/10 hover:shadow-xs text-tagline-1 text-secondary/75 hover:text-secondary dark:text-accent/75 dark:hover:text-white flex cursor-pointer items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-normal transition-all duration-300">
+                    className="hover:bg-background-2 dark:hover:bg-white/10 hover:shadow-xs text-tagline-1 text-secondary/80 hover:text-secondary dark:text-accent/80 dark:hover:text-white flex cursor-pointer items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-normal transition-all duration-300">
                     <span>{label}</span>
                     <span className="block origin-center translate-y-px transition-all duration-300 group-hover:rotate-180">
                       <svg
@@ -96,7 +96,7 @@ const Navbar = () => {
               <li className="relative cursor-pointer py-2.5">
                 <Link
                   href="/pricing"
-                  className="hover:bg-white/80 dark:hover:bg-white/10 hover:shadow-xs text-tagline-1 text-secondary/75 hover:text-secondary dark:text-accent/75 dark:hover:text-white flex items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-normal transition-all duration-300">
+                  className="hover:bg-background-2 dark:hover:bg-white/10 hover:shadow-xs text-tagline-1 text-secondary/80 hover:text-secondary dark:text-accent/80 dark:hover:text-white flex items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-normal transition-all duration-300">
                   <span>Pricing</span>
                 </Link>
               </li>
