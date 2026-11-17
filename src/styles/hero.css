@@ -1,0 +1,121 @@
+/* ============================================
+   HERO PAGE — Aller-Inspired Layout System
+   ============================================ */
+
+/* Custom border color for the grid system */
+.hero-page {
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-color-dark: rgba(255, 255, 255, 0.08);
+}
+
+.dark .hero-page {
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Grid ornament dots */
+.hero-page .grid-dot {
+  @apply pointer-events-none absolute z-30 grid size-3.5 grid-cols-[3px_3px] content-between justify-between;
+}
+.hero-page .grid-dot span {
+  @apply size-[3px] bg-secondary/15 dark:bg-accent/15;
+}
+.hero-page .grid-dot-left {
+  @apply -left-[7px] -translate-y-1/2;
+}
+.hero-page .grid-dot-right {
+  @apply -right-[7px] -translate-y-1/2;
+}
+
+/* Horizontal rules */
+.hero-page .grid-rule {
+  @apply pointer-events-none absolute left-1/2 w-[100vw] -translate-x-1/2 border-t border-secondary/8 dark:border-accent/8;
+}
+.hero-page .grid-rule-dashed {
+  @apply border-dashed;
+}
+
+/* Reveal animation base classes */
+.hero-page [data-hero-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-page [data-hero-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-page [data-hero-reveal="fade"] {
+  transform: none;
+}
+.hero-page [data-hero-reveal="slide"] {
+  transform: translateX(-24px);
+}
+.hero-page [data-hero-reveal="slide"].revealed {
+  transform: translateX(0);
+}
+
+/* Section transition */
+.hero-section {
+  @apply relative;
+}
+
+/* Service card hover gradient sweep */
+.hero-service-card::before {
+  content: '';
+  @apply pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500;
+  background: linear-gradient(to right, transparent, rgba(56, 189, 248, 0.06));
+}
+.hero-service-card:hover::before {
+  opacity: 1;
+}
+
+/* Engagement card */
+.hero-engagement-card {
+  @apply relative overflow-hidden rounded-2xl border border-secondary/8 dark:border-accent/8 bg-white dark:bg-background-8 p-6 transition-all duration-500;
+}
+.hero-engagement-card:hover {
+  @apply shadow-xl -translate-y-1 border-primary-500/30;
+}
+
+/* FAQ accordion */
+.hero-faq-item {
+  @apply border-b border-secondary/8 dark:border-accent/8;
+}
+.hero-faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-faq-answer.open {
+  grid-template-rows: 1fr;
+}
+.hero-faq-answer > div {
+  overflow: hidden;
+}
+
+/* Specialization card */
+.hero-spec-card {
+  @apply relative flex h-[400px] w-[280px] shrink-0 snap-start flex-col gap-2 overflow-hidden rounded-3xl bg-white dark:bg-background-8 p-6 transition-[filter,transform] duration-500;
+  @apply md:h-[440px] md:w-[320px] lg:h-[483px] lg:w-[340px];
+}
+.hero-spec-card:hover {
+  @apply -translate-y-1;
+  filter: drop-shadow(0 13px 14.5px rgba(0, 0, 0, 0.1));
+}
+
+/* Process step card */
+.hero-process-card {
+  @apply relative flex min-h-[176px] flex-col justify-between gap-4 overflow-hidden rounded-2xl bg-white dark:bg-background-8 p-5;
+  @apply transition-[transform,box-shadow] duration-500;
+}
+.hero-process-card:hover {
+  @apply -translate-y-0.5 shadow-lg;
+}
+
+/* Contact form styles */
+.hero-contact-input {
+  @apply w-full rounded-xl border border-secondary/10 dark:border-accent/10 bg-background-2 dark:bg-background-7 px-4 py-3 text-sm text-secondary dark:text-accent;
+  @apply outline-none transition-all duration-300;
+  @apply focus:border-primary-500/50 focus:ring-2 focus:ring-primary-500/10;
+}
