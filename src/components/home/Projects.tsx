@@ -107,6 +107,8 @@ const Projects = () => {
                       {/* Card Thumbnail */}
                       <Link
                         href={item.href}
+                        data-cursor-text="View"
+                        data-cursor-variant="explore"
                         className={`group relative block w-full overflow-hidden rounded-[20px] ${imgHeightClass}`}>
                         <Image
                           src={item.thumbnail}

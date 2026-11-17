@@ -69,6 +69,8 @@ export default function HeroVideoCard({
   return (
     <figure
       ref={cardRef}
+      data-cursor-text="Play"
+      data-cursor-variant="play"
       className={`group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none ${className}`}>
       
       {/* Fallback / Poster Image */}

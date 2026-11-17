@@ -113,7 +113,10 @@ const Hero = () => {
         <div className="w-full relative">
           <div className="scroll-bar flex items-center justify-start xl:justify-center gap-4 overflow-x-auto overflow-y-hidden py-4 px-4 sm:px-6 cursor-grab active:cursor-grabbing select-none">
             {/* Card 1 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Explore"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[0].image}
                 alt={heroTechCards[0].alt}
@@ -132,7 +135,10 @@ const Hero = () => {
             </figure>
 
             {/* Card 2 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Explore"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[1].image}
                 alt={heroTechCards[1].alt}
@@ -151,7 +157,10 @@ const Hero = () => {
             </figure>
 
             {/* Card 3 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Security"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[2].image}
                 alt={heroTechCards[2].alt}
@@ -175,7 +184,10 @@ const Hero = () => {
             />
 
             {/* Card 5 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Explore"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[4].image}
                 alt={heroTechCards[4].alt}
@@ -194,7 +206,10 @@ const Hero = () => {
             </figure>
 
             {/* Card 6 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Explore"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[5].image}
                 alt={heroTechCards[5].alt}
@@ -213,7 +228,10 @@ const Hero = () => {
             </figure>
 
             {/* Card 7 */}
-            <figure className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
+            <figure
+              data-cursor-text="Explore"
+              data-cursor-variant="explore"
+              className="group relative h-[380px] w-[260px] min-w-[260px] max-w-[260px] shrink-0 overflow-hidden rounded-[20px] border border-stroke-3/50 dark:border-stroke-7/50 bg-background-2 dark:bg-background-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary-500/50 hover:shadow-2xl select-none">
               <Image
                 src={heroTechCards[6].image}
                 alt={heroTechCards[6].alt}

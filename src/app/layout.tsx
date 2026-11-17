@@ -1,3 +1,4 @@
+import CustomCursor from '@/components/shared/CustomCursor';
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import Preloader, { preloaderSkipScript } from '@/components/shared/Preloader';
@@ -28,6 +29,7 @@ export default function RootLayout({
       </head>
       <body className={`${interTight.variable} antialiased`}>
         <Preloader />
+        <CustomCursor />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Suspense>
             <SmoothScrollProvider>

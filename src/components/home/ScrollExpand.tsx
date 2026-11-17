@@ -120,6 +120,8 @@ const ScrollExpand = ({
   return (
     <figure
       ref={scrollExpandRef}
+      data-cursor-text="Expand"
+      data-cursor-variant="explore"
       className="group relative rounded-[20px] overflow-hidden max-h-[380px] h-[380px] min-w-[280px] md:min-w-[500px] shrink-0 border border-stroke-3/60 dark:border-stroke-7/60 bg-background-2 dark:bg-background-8 transition-shadow duration-300 hover:shadow-2xl select-none">
       
       {/* Fallback Image */}

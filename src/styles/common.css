@@ -530,4 +530,23 @@ Common Styles all over the sites
   animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* ============================================
+   CONTEXTUAL CUSTOM MOUSE POINTER
+   ============================================ */
+@media (hover: hover) and (pointer: fine) {
+  [data-cursor-soon],
+  [data-cursor-soon] *,
+  [data-cursor-text],
+  [data-cursor-text] *,
+  [data-cursor-variant],
+  [data-cursor-variant] *,
+  [data-cursor-play],
+  [data-cursor-play] *,
+  [data-cursor-drag],
+  [data-cursor-drag] * {
+    cursor: none !important;
+  }
+}
+
+
 

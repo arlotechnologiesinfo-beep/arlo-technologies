@@ -74,6 +74,8 @@ const Projects = () => {
 
                       {/* Project Thumbnail */}
                       <div
+                        data-cursor-text="Explore"
+                        data-cursor-variant="explore"
                         className={`group relative w-full overflow-hidden rounded-[20px] ${
                           project.thumbnailAspect ? '' : imgHeightClass
                         }`}
